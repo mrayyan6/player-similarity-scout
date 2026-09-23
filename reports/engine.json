@@ -1,0 +1,365 @@
+{
+ "fitted_on": "2025/26",
+ "k": 8,
+ "role_weight": 2.5,
+ "silhouette": {
+  "5": 0.2373,
+  "6": 0.2326,
+  "7": 0.226,
+  "8": 0.2008
+ },
+ "pca_explained": [
+  0.3763,
+  0.2168
+ ],
+ "pca_loadings": {
+  "goals": [
+   -0.2315,
+   -0.2489
+  ],
+  "assists": [
+   -0.2166,
+   0.1398
+  ],
+  "xg": [
+   -0.2572,
+   -0.2794
+  ],
+  "xa": [
+   -0.276,
+   0.21
+  ],
+  "shots": [
+   -0.3125,
+   -0.1892
+  ],
+  "key_passes": [
+   -0.2977,
+   0.2114
+  ],
+  "big_chances_created": [
+   -0.2465,
+   0.1608
+  ],
+  "dribbles": [
+   -0.2275,
+   0.088
+  ],
+  "final_third_passes": [
+   -0.1815,
+   0.3321
+  ],
+  "tackles_won": [
+   0.1129,
+   0.2816
+  ],
+  "interceptions": [
+   0.2358,
+   0.2148
+  ],
+  "recoveries": [
+   0.0035,
+   0.3948
+  ],
+  "clearances": [
+   0.3205,
+   -0.0947
+  ],
+  "aerials_won": [
+   0.1488,
+   -0.2579
+  ]
+ },
+ "archetypes": [
+  {
+   "id": 0,
+   "name": "Progressive wing-back",
+   "size": 74,
+   "centroid": {
+    "goals": -0.495,
+    "assists": 0.478,
+    "xg": -0.584,
+    "xa": 0.539,
+    "shots": -0.57,
+    "key_passes": 0.376,
+    "big_chances_created": 0.535,
+    "dribbles": 0.003,
+    "final_third_passes": 0.497,
+    "tackles_won": 0.491,
+    "interceptions": 0.376,
+    "recoveries": 0.262,
+    "clearances": 0.066,
+    "aerials_won": -0.342
+   },
+   "roles": {
+    "Defenders": 74
+   },
+   "examples": [
+    "Neco Williams",
+    "Carlos Romero",
+    "Jeremy Toljan",
+    "Matty Cash",
+    "Matheus Nunes",
+    "Andrei Rațiu"
+   ]
+  },
+  {
+   "id": 1,
+   "name": "Wide dribbler",
+   "size": 116,
+   "centroid": {
+    "goals": 0.214,
+    "assists": 0.132,
+    "xg": 0.371,
+    "xa": 0.319,
+    "shots": 0.629,
+    "key_passes": 0.368,
+    "big_chances_created": 0.143,
+    "dribbles": 0.728,
+    "final_third_passes": -0.054,
+    "tackles_won": -0.294,
+    "interceptions": -0.693,
+    "recoveries": -0.065,
+    "clearances": -0.756,
+    "aerials_won": -0.546
+   },
+   "roles": {
+    "Attackers": 116
+   },
+   "examples": [
+    "Jarrod Bowen",
+    "Antoine Semenyo",
+    "Germán Valera",
+    "Iliman Ndiaye",
+    "Cody Gakpo",
+    "Jaidon Anthony"
+   ]
+  },
+  {
+   "id": 2,
+   "name": "Stopper centre-back",
+   "size": 134,
+   "centroid": {
+    "goals": -0.544,
+    "assists": -0.641,
+    "xg": -0.597,
+    "xa": -0.915,
+    "shots": -0.804,
+    "key_passes": -1.079,
+    "big_chances_created": -0.732,
+    "dribbles": -0.875,
+    "final_third_passes": -0.924,
+    "tackles_won": -0.427,
+    "interceptions": 0.492,
+    "recoveries": -0.526,
+    "clearances": 1.759,
+    "aerials_won": 1.038
+   },
+   "roles": {
+    "Defenders": 131,
+    "Attackers": 2,
+    "Midfielders": 1
+   },
+   "examples": [
+    "Virgil van Dijk",
+    "Nikola Milenković",
+    "James Tarkowski",
+    "Leandro Cabrera",
+    "Martin Valjent",
+    "Marcos Senesi"
+   ]
+  },
+  {
+   "id": 3,
+   "name": "Ball-winning midfielder",
+   "size": 138,
+   "centroid": {
+    "goals": -0.323,
+    "assists": -0.361,
+    "xg": -0.419,
+    "xa": -0.456,
+    "shots": -0.357,
+    "key_passes": -0.356,
+    "big_chances_created": -0.528,
+    "dribbles": -0.244,
+    "final_third_passes": 0.122,
+    "tackles_won": 0.68,
+    "interceptions": 0.535,
+    "recoveries": 0.585,
+    "clearances": -0.273,
+    "aerials_won": -0.081
+   },
+   "roles": {
+    "Midfielders": 137,
+    "Attackers": 1
+   },
+   "examples": [
+    "Mauro Arambarri",
+    "Aleix Febas",
+    "Ethan Ampadu",
+    "Antonio Blanco",
+    "Mateus Fernandes",
+    "Martín Zubimendi"
+   ]
+  },
+  {
+   "id": 4,
+   "name": "Creative playmaker",
+   "size": 97,
+   "centroid": {
+    "goals": 0.017,
+    "assists": 0.675,
+    "xg": -0.037,
+    "xa": 0.842,
+    "shots": 0.204,
+    "key_passes": 1.037,
+    "big_chances_created": 0.79,
+    "dribbles": 0.185,
+    "final_third_passes": 1.057,
+    "tackles_won": -0.086,
+    "interceptions": -0.159,
+    "recoveries": 0.767,
+    "clearances": -0.677,
+    "aerials_won": -0.571
+   },
+   "roles": {
+    "Midfielders": 97
+   },
+   "examples": [
+    "James Garner",
+    "Elliot Anderson",
+    "Morgan Rogers",
+    "Luis Milla",
+    "Dominik Szoboszlai",
+    "Enzo Fernández"
+   ]
+  },
+  {
+   "id": 5,
+   "name": "Clinical finisher",
+   "size": 87,
+   "centroid": {
+    "goals": 1.822,
+    "assists": -0.101,
+    "xg": 1.957,
+    "xa": -0.393,
+    "shots": 1.478,
+    "key_passes": -0.191,
+    "big_chances_created": -0.138,
+    "dribbles": -0.145,
+    "final_third_passes": -0.81,
+    "tackles_won": -1.109,
+    "interceptions": -1.191,
+    "recoveries": -1.39,
+    "clearances": -0.654,
+    "aerials_won": 0.9
+   },
+   "roles": {
+    "Attackers": 83,
+    "Midfielders": 3,
+    "Defenders": 1
+   },
+   "examples": [
+    "Igor Thiago",
+    "Vedat Muriqi",
+    "Erling Haaland",
+    "Ante Budimir",
+    "Ollie Watkins",
+    "Evanilson"
+   ]
+  },
+  {
+   "id": 6,
+   "name": "Creative forward",
+   "size": 58,
+   "centroid": {
+    "goals": 0.506,
+    "assists": 1.526,
+    "xg": 0.693,
+    "xa": 2.08,
+    "shots": 1.218,
+    "key_passes": 1.866,
+    "big_chances_created": 1.831,
+    "dribbles": 1.431,
+    "final_third_passes": 1.245,
+    "tackles_won": -0.376,
+    "interceptions": -0.713,
+    "recoveries": 0.124,
+    "clearances": -0.92,
+    "aerials_won": -0.829
+   },
+   "roles": {
+    "Attackers": 53,
+    "Midfielders": 5
+   },
+   "examples": [
+    "Bruno Fernandes",
+    "Vinícius Júnior",
+    "Pedro Neto",
+    "Kylian Mbappé",
+    "Antony",
+    "Yankuba Minteh"
+   ]
+  },
+  {
+   "id": 7,
+   "name": "Defensive full-back",
+   "size": 111,
+   "centroid": {
+    "goals": -0.605,
+    "assists": -0.583,
+    "xg": -0.674,
+    "xa": -0.575,
+    "shots": -0.845,
+    "key_passes": -0.637,
+    "big_chances_created": -0.559,
+    "dribbles": -0.305,
+    "final_third_passes": -0.269,
+    "tackles_won": 0.778,
+    "interceptions": 0.655,
+    "recoveries": 0.152,
+    "clearances": 0.542,
+    "aerials_won": -0.166
+   },
+   "roles": {
+    "Defenders": 111
+   },
+   "examples": [
+    "Adrien Truffert",
+    "Michael Kayode",
+    "Tyrick Mitchell",
+    "Luke Shaw",
+    "Juan Iglesias",
+    "Ferdi Kadıoğlu"
+   ]
+  }
+ ],
+ "seasons": {
+  "2025/26": {
+   "players": 815,
+   "clusters": {
+    "Ball-winning midfielder": 138,
+    "Stopper centre-back": 134,
+    "Wide dribbler": 116,
+    "Defensive full-back": 111,
+    "Creative playmaker": 97,
+    "Clinical finisher": 87,
+    "Progressive wing-back": 74,
+    "Creative forward": 58
+   }
+  },
+  "2026/27": {
+   "players": 348,
+   "clusters": {
+    "Defensive full-back": 64,
+    "Ball-winning midfielder": 54,
+    "Stopper centre-back": 52,
+    "Creative playmaker": 48,
+    "Creative forward": 33,
+    "Clinical finisher": 33,
+    "Wide dribbler": 32,
+    "Progressive wing-back": 32
+   }
+  }
+ }
+}

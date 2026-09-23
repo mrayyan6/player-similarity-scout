@@ -1,0 +1,349 @@
+player_id,player,team,league,position,role,minutes,cluster,archetype,pc1,pc2,fit,pct_goals_p90,pct_assists_p90,pct_xg_p90,pct_xa_p90,pct_shots_p90,pct_key_passes_p90,pct_big_chances_created_p90,pct_dribbles_p90,pct_final_third_passes_p90,pct_tackles_won_p90,pct_interceptions_p90,pct_recoveries_p90,pct_clearances_p90,pct_aerials_won_p90
+149734,Aymeric Laporte,Athletic Club,La Liga,Defender,Defenders,482,7,Defensive full-back,3.0501,-0.1761,0.3063,41.2,39.5,79.1,37.5,30.4,7.1,32.1,32.4,43.2,45.9,32.4,93.9,52.0,57.4
+1171619,Beñat Gerenabarrena,Athletic Club,La Liga,Midfielder,Midfielders,373,3,Ball-winning midfielder,2.4973,1.7373,0.1976,33.8,32.0,7.0,35.1,9.6,10.5,24.6,6.1,13.2,87.7,99.1,8.8,34.2,72.8
+783374,Iñaki Williams,Athletic Club,La Liga,Midfielder,Attackers,392,1,Wide dribbler,-2.8252,-2.251,0.1732,15.1,86.0,65.1,3.5,65.1,52.3,61.6,51.2,4.7,77.9,51.2,16.3,24.4,59.3
+910267,Jesús Areso,Athletic Club,La Liga,Defender,Defenders,344,7,Defensive full-back,2.3376,0.6034,0.2569,41.2,39.5,39.2,77.0,43.2,93.2,32.1,45.9,63.5,70.3,92.6,30.4,8.1,63.5
+1085400,Nico Williams,Athletic Club,La Liga,Midfielder,Attackers,364,6,Creative forward,-3.6367,0.7224,0.2124,47.7,30.2,51.2,96.5,73.8,75.6,67.4,72.1,83.7,93.0,84.9,86.0,74.4,36.0
+966801,Oihan Sancet,Athletic Club,La Liga,Midfielder,Midfielders,515,4,Creative playmaker,-3.2892,0.0994,0.1896,70.2,32.0,97.4,86.0,92.1,66.7,50.9,94.7,51.3,8.8,22.8,26.3,1.8,74.6
+944165,Robert Navarro,Athletic Club,La Liga,Midfielder,Attackers,317,1,Wide dribbler,-2.9083,-0.5911,0.1792,76.2,30.2,64.0,67.4,55.8,74.4,18.6,67.4,74.4,69.8,95.3,95.3,7.0,6.4
+807648,Yeray Álvarez,Athletic Club,La Liga,Defender,Defenders,315,0,Progressive wing-back,1.5597,-0.1702,0.2151,41.2,94.9,61.5,7.1,70.9,61.8,91.2,89.2,33.1,10.8,56.1,64.2,56.4,68.9
+84531,Yuri Berchiche,Athletic Club,La Liga,Defender,Defenders,367,0,Progressive wing-back,0.5575,2.0506,0.2095,41.2,39.5,74.3,75.0,99.3,92.6,85.8,42.2,90.5,82.4,45.9,98.6,10.1,30.4
+824200,Ademola Lookman,Atlético Madrid,La Liga,Forward,Attackers,460,1,Wide dribbler,-3.2078,-1.2548,0.2382,36.0,30.2,45.3,66.3,31.4,94.2,46.5,37.2,73.3,50.0,16.3,24.4,7.0,6.4
+177177,Alejandro Grimaldo,Atlético Madrid,La Liga,Midfielder,Defenders,535,0,Progressive wing-back,-0.8911,0.0773,0.2075,97.3,81.1,99.3,70.9,95.9,54.1,92.6,99.3,91.2,77.0,28.4,41.2,9.5,18.9
+910031,Alex Baena,Atlético Madrid,La Liga,Midfielder,Attackers,455,6,Creative forward,-4.3575,-0.0534,0.1559,86.0,62.8,41.9,86.0,73.8,96.5,47.7,2.3,91.9,36.0,98.8,67.4,16.3,16.3
+807771,Dávid Hancko,Atlético Madrid,La Liga,Defender,Defenders,549,0,Progressive wing-back,1.0023,0.7701,0.2396,41.2,95.9,70.9,67.6,89.9,49.3,91.9,91.2,80.1,29.1,79.1,56.1,60.1,48.0
+1099352,Giuliano Simeone,Atlético Madrid,La Liga,Midfielder,Attackers,474,1,Wide dribbler,-1.8244,0.3137,0.1759,59.3,82.6,37.2,45.3,23.3,39.5,44.2,16.3,72.1,97.7,89.5,97.7,73.3,75.6
+917087,Kang-in Lee,Atlético Madrid,La Liga,Midfielder,Midfielders,469,6,Creative forward,-4.5701,2.0889,0.1865,89.5,69.3,86.0,76.3,99.1,72.8,86.8,95.6,86.0,80.7,25.4,32.5,13.2,42.1
+84539,Koke,Atlético Madrid,La Liga,Midfielder,Midfielders,358,4,Creative playmaker,-1.1583,4.3531,0.1916,33.8,32.0,28.9,70.2,21.9,74.6,65.8,22.8,100.0,92.1,30.7,71.9,9.6,5.7
+1094106,Marc Pubill,Atlético Madrid,La Liga,Defender,Defenders,403,7,Defensive full-back,2.3098,-1.2056,0.2635,93.9,39.5,50.0,31.1,37.2,7.1,32.1,13.5,50.0,59.5,4.1,39.9,16.2,48.6
+353138,Marcos Llorente,Atlético Madrid,La Liga,Defender,Defenders,465,0,Progressive wing-back,1.2141,2.4127,0.2342,41.2,83.1,39.9,52.0,49.3,96.6,32.1,77.7,96.6,61.5,91.9,89.2,7.4,8.1
+859917,Morten Hjulmand,Atlético Madrid,La Liga,Midfielder,Midfielders,353,3,Ball-winning midfielder,0.8667,2.3574,0.2337,33.8,32.0,41.2,44.7,28.9,76.3,24.6,48.2,49.1,52.2,91.2,50.9,82.5,84.2
+949962,Ferrán Jutglà,Celta Vigo,La Liga,Forward,Attackers,394,1,Wide dribbler,-1.3976,-2.6602,0.2459,45.3,30.2,20.9,33.7,14.0,29.1,60.5,32.6,23.3,7.6,16.3,45.3,55.8,65.1
+962890,Ilaix Moriba,Celta Vigo,La Liga,Midfielder,Midfielders,492,3,Ball-winning midfielder,0.2424,2.181,0.2994,73.7,32.0,43.0,42.1,44.7,5.3,52.6,30.7,75.4,76.3,57.9,67.5,53.5,5.7
+1008259,Javier Rueda,Celta Vigo,La Liga,Midfielder,Defenders,376,0,Progressive wing-back,1.2792,1.7229,0.3338,41.2,39.5,37.2,83.1,62.2,89.9,83.8,84.5,83.8,63.5,75.0,85.1,14.2,29.1
+69408,Marcos Alonso,Celta Vigo,La Liga,Defender,Defenders,411,7,Defensive full-back,3.4592,1.4922,0.1863,41.2,39.5,69.6,50.7,58.8,7.1,32.1,13.5,99.3,58.1,96.6,90.5,77.0,52.7
+1398526,Miguel Román,Celta Vigo,La Liga,Midfielder,Midfielders,579,4,Creative playmaker,-1.5528,2.3966,0.2729,68.4,85.1,26.3,57.0,53.5,46.5,50.0,42.1,86.8,31.6,20.2,58.8,45.6,50.0
+1002764,Sergio Carreira,Celta Vigo,La Liga,Midfielder,Defenders,456,0,Progressive wing-back,0.069,0.924,0.2307,41.2,39.5,87.8,91.9,64.2,71.6,73.6,79.1,98.6,12.8,8.1,61.1,1.4,2.0
+1126779,Williot Swedberg,Celta Vigo,La Liga,Midfielder,Attackers,310,1,Wide dribbler,-0.6115,-1.8689,0.2492,15.1,30.2,44.2,37.2,9.3,37.2,18.6,25.6,47.7,72.1,70.9,19.8,44.2,44.2
+1145100,Yoel Lago,Celta Vigo,La Liga,Defender,Defenders,585,7,Defensive full-back,3.9551,0.2171,0.2376,41.2,39.5,29.7,19.9,11.5,16.2,32.1,13.5,41.6,27.0,95.9,78.4,67.2,23.6
+1082968,Abderrahman Rebbach,Deportivo Alavés,La Liga,Midfielder,Attackers,561,7,Defensive full-back,1.1271,-0.3528,0.1864,15.1,30.2,1.2,7.0,3.5,1.2,18.6,68.6,37.2,90.7,97.7,80.2,87.2,57.0
+855832,Antonio Blanco,Deportivo Alavés,La Liga,Midfielder,Midfielders,526,3,Ball-winning midfielder,1.8514,1.824,0.2446,33.8,32.0,34.2,22.4,56.1,18.4,24.6,12.3,16.7,64.0,93.9,57.9,60.5,25.0
+235648,Jonny Otto,Deportivo Alavés,La Liga,Defender,Defenders,510,7,Defensive full-back,3.0779,0.1638,0.3879,41.2,39.5,35.8,33.8,29.7,38.5,32.1,69.6,27.0,83.8,29.7,72.3,59.5,27.0
+814385,Lucas Boyé,Deportivo Alavés,La Liga,Forward,Attackers,484,5,Clinical finisher,-2.0249,-2.7124,0.1812,84.9,30.2,46.5,41.9,75.6,32.6,41.9,23.3,36.0,100.0,16.3,66.3,72.1,81.4
+175753,Mariano Díaz,Deportivo Alavés,La Liga,Forward,Attackers,323,5,Clinical finisher,-4.1377,-2.9865,0.1846,88.4,98.8,61.6,58.1,52.3,34.9,72.1,66.3,17.4,27.9,16.3,65.1,65.1,80.2
+896073,Nahuel Tenaglia,Deportivo Alavés,La Liga,Defender,Defenders,585,7,Defensive full-back,2.7636,-0.322,0.3503,83.8,39.5,68.2,57.4,75.0,33.8,66.2,62.8,12.8,65.5,83.1,54.1,67.2,36.5
+1084381,Pablo Ibáñez,Deportivo Alavés,La Liga,Midfielder,Midfielders,580,3,Ball-winning midfielder,0.7716,0.7667,0.3237,67.5,32.0,64.0,10.5,59.6,16.7,24.6,74.6,17.5,30.7,74.6,72.8,77.2,70.2
+831253,Toni Martínez,Deportivo Alavés,La Liga,Forward,Attackers,349,5,Clinical finisher,-1.6834,-3.8105,0.1773,15.1,30.2,76.7,24.4,67.4,59.3,87.2,2.3,10.5,84.9,16.3,10.5,98.8,97.7
+999178,Ville Koski,Deportivo Alavés,La Liga,Defender,Defenders,620,2,Stopper centre-back,3.6136,-2.6676,0.272,83.1,39.5,89.9,2.0,27.0,7.1,32.1,28.4,1.4,11.5,56.8,2.7,89.2,47.3
+1513222,Ángel Pérez,Deportivo Alavés,La Liga,Midfielder,Attackers,492,6,Creative forward,-4.4439,1.2961,0.2017,15.1,90.7,30.2,95.3,19.8,79.1,98.8,83.7,38.4,46.5,82.6,74.4,70.9,26.7
+2335487,Bil Nsongo,Deportivo de A Coruña,La Liga,Forward,Attackers,409,1,Wide dribbler,-1.1687,-2.2168,0.2153,15.1,30.2,27.9,11.6,40.7,26.7,57.0,88.4,27.9,87.2,16.3,51.2,89.5,89.5
+973300,Giacomo Quagliata,Deportivo de A Coruña,La Liga,Defender,Defenders,569,7,Defensive full-back,1.864,1.1783,0.226,41.2,39.5,53.4,81.8,64.9,79.7,66.9,79.7,47.3,19.6,94.6,89.9,10.8,6.8
+325355,José María Giménez,Deportivo de A Coruña,La Liga,Defender,Defenders,364,2,Stopper centre-back,3.0679,-2.6643,0.2439,41.2,39.5,80.4,8.8,87.8,50.7,86.5,13.5,29.7,1.4,46.6,1.4,94.6,94.6
+1100207,Lorenzo Amatucci,Deportivo de A Coruña,La Liga,Midfielder,Midfielders,540,3,Ball-winning midfielder,1.6779,1.3595,0.327,33.8,66.7,1.3,13.2,1.3,22.8,24.6,28.1,18.4,71.1,61.4,43.4,93.0,90.4
+1127337,Lucas Noubi,Deportivo de A Coruña,La Liga,Defender,Defenders,450,2,Stopper centre-back,4.5504,-0.8293,0.3111,41.2,39.5,5.4,5.4,5.4,23.3,32.1,34.8,4.4,64.5,86.5,26.4,93.2,53.4
+966526,Luismi Cruz,Deportivo de A Coruña,La Liga,Midfielder,Midfielders,399,4,Creative playmaker,-3.0495,2.9197,0.2197,83.3,78.9,54.4,95.6,43.9,97.4,61.8,77.6,61.4,62.3,28.9,38.6,30.7,69.3
+984622,Mario Soriano,Deportivo de A Coruña,La Liga,Midfielder,Midfielders,508,4,Creative playmaker,-2.16,3.0183,0.216,33.8,87.7,49.1,62.3,57.9,52.6,92.1,29.8,64.9,15.8,42.1,69.3,32.5,27.2
+51498,Pierre-Emerick Aubameyang,Deportivo de A Coruña,La Liga,Forward,Attackers,560,5,Clinical finisher,-3.9805,-3.2838,0.2149,87.2,80.2,77.9,47.7,64.0,64.0,38.4,30.2,44.2,33.7,67.4,23.3,88.4,45.3
+150864,Ximo Navarro,Deportivo de A Coruña,La Liga,Defender,Defenders,533,7,Defensive full-back,3.5367,-0.3391,0.3159,41.2,39.5,57.4,31.8,60.1,18.2,32.1,13.5,40.5,78.4,82.4,18.2,62.2,19.6
+1542721,Buba Sangaré,Elche,La Liga,Defender,Defenders,540,7,Defensive full-back,2.5728,-0.8744,0.2365,85.1,39.5,18.2,29.7,12.8,35.5,32.1,52.7,39.9,87.8,16.2,3.4,30.4,7.4
+1117026,Federico Redondo,Elche,La Liga,Midfielder,Midfielders,327,3,Ball-winning midfielder,2.2658,3.5475,0.1781,33.8,32.0,14.0,25.4,12.3,23.7,67.5,25.4,3.5,86.8,97.4,94.7,93.9,23.2
+1016019,Fernando Niño,Elche,La Liga,Forward,Attackers,470,5,Clinical finisher,-2.0751,-4.4212,0.2519,93.0,30.2,79.1,29.1,38.4,7.0,45.3,61.6,30.2,80.2,62.8,38.4,94.2,96.5
+962710,Germán Valera,Elche,La Liga,Midfielder,Attackers,572,1,Wide dribbler,-1.5892,-0.2014,0.2779,30.2,30.2,7.0,70.9,1.2,81.4,37.2,59.3,68.6,54.7,74.4,58.1,91.9,33.7
+914765,Gonzalo Villar,Elche,La Liga,Midfielder,Midfielders,573,4,Creative playmaker,-0.954,2.7734,0.3784,33.8,64.0,32.5,77.2,25.4,53.5,70.2,69.3,59.6,57.9,44.7,61.4,16.7,77.2
+1832076,Javi Morcillo,Elche,La Liga,Midfielder,Midfielders,307,3,Ball-winning midfielder,3.0238,1.7214,0.2247,33.8,32.0,6.1,2.6,14.0,15.8,24.6,6.1,0.9,95.6,89.5,60.5,96.5,44.3
+605374,Tete Morente,Elche,La Liga,Forward,Attackers,398,6,Creative forward,-2.4719,1.1799,0.1806,15.1,96.5,3.5,56.4,7.0,50.6,82.6,60.5,76.7,23.3,87.2,90.7,54.1,20.9
+855831,Víctor Chust,Elche,La Liga,Defender,Defenders,630,7,Defensive full-back,2.2078,0.1612,0.3379,41.2,79.4,71.6,60.1,48.0,44.6,64.5,27.4,58.8,42.9,48.3,81.8,43.2,68.9
+1129360,Clemens Riedel,Espanyol,La Liga,Defender,Defenders,375,2,Stopper centre-back,3.6864,-1.2971,0.4867,41.2,39.5,23.0,17.2,39.2,7.1,32.1,13.5,33.8,31.1,31.1,49.7,81.4,78.7
+877262,Edu Expósito,Espanyol,La Liga,Midfielder,Midfielders,558,4,Creative playmaker,-2.8465,3.2435,0.2125,33.8,32.0,72.8,88.6,83.3,86.0,71.9,88.6,81.6,74.1,21.1,78.9,74.6,80.7
+1514913,Javier Hernández,Espanyol,La Liga,Midfielder,Midfielders,561,4,Creative playmaker,-3.6091,2.4381,0.1756,33.8,100.0,64.9,74.6,71.1,77.2,93.9,71.1,24.6,25.4,7.9,27.2,4.4,5.7
+81992,Leandro Cabrera,Espanyol,La Liga,Defender,Defenders,360,2,Stopper centre-back,4.0617,-2.3271,0.2851,41.2,39.5,59.5,54.7,41.6,7.1,32.1,13.5,48.0,8.1,48.3,8.1,99.3,97.3
+1064026,Omar El Hilali,Espanyol,La Liga,Defender,Defenders,525,7,Defensive full-back,2.1892,-0.1392,0.2454,41.2,81.8,5.4,95.3,5.4,56.8,69.6,68.2,23.6,52.7,50.7,9.5,68.2,59.5
+1392592,Roberto Fernández,Espanyol,La Liga,Forward,Attackers,613,5,Clinical finisher,-2.0774,-5.3125,0.2841,90.7,30.2,75.6,34.9,44.2,18.6,18.6,14.0,1.2,32.6,33.7,8.1,81.4,79.1
+2065347,Roger Hinojo,Espanyol,La Liga,Defender,Defenders,536,7,Defensive full-back,3.0228,0.7303,0.3584,41.2,39.5,24.0,54.1,13.5,36.5,32.1,29.7,71.6,90.5,39.2,70.3,41.2,39.9
+1063015,Tyrhys Dolan,Espanyol,La Liga,Midfielder,Attackers,433,1,Wide dribbler,-0.5836,-0.0398,0.2199,40.7,30.2,9.3,64.0,10.5,10.5,18.6,57.0,53.5,53.5,90.7,98.8,48.8,17.4
+892521,Unai Núñez,Espanyol,La Liga,Defender,Defenders,423,7,Defensive full-back,3.3388,0.1812,0.3233,41.2,39.5,34.8,80.4,35.8,68.9,32.1,39.2,43.9,55.4,80.4,79.1,78.4,71.6
+1064009,Urko González,Espanyol,La Liga,Midfielder,Midfielders,442,3,Ball-winning midfielder,1.7301,0.4879,0.274,33.8,32.0,2.6,14.0,5.3,7.0,24.6,15.8,20.2,21.1,62.3,16.7,81.6,47.4
+1136863,Álex Calatrava,Espanyol,La Liga,Midfielder,Midfielders,388,3,Ball-winning midfielder,-0.6322,0.0622,0.2485,84.2,32.0,78.9,40.4,82.5,28.9,24.6,78.9,30.7,83.3,29.8,23.7,44.7,87.7
+186795,Andreas Christensen,FC Barcelona,La Liga,Defender,Defenders,402,2,Stopper centre-back,2.7962,-0.6059,0.2617,41.2,89.9,89.2,56.1,73.0,25.7,32.1,13.5,39.2,18.9,83.8,73.6,68.9,83.8
+914902,Anthony Gordon,FC Barcelona,La Liga,Forward,Attackers,397,6,Creative forward,-5.8437,-0.3941,0.1932,15.1,100.0,70.9,82.6,62.8,72.1,95.3,90.7,70.9,41.9,16.3,28.5,36.0,22.1
+876214,Eric García,FC Barcelona,La Liga,Defender,Defenders,469,0,Progressive wing-back,1.5833,2.105,0.2634,41.2,39.5,43.9,82.4,63.5,81.1,73.0,56.1,98.0,89.9,45.3,88.5,39.2,29.7
+1153270,Fermín López,FC Barcelona,La Liga,Midfielder,Midfielders,447,6,Creative forward,-5.4191,0.5241,0.1537,99.1,90.4,100.0,73.7,79.8,79.8,87.7,86.0,72.8,34.2,26.3,5.3,14.9,59.6
+1094827,Gerard Martín,FC Barcelona,La Liga,Defender,Defenders,436,2,Stopper centre-back,3.5333,-0.8718,0.2775,41.2,39.5,38.5,32.4,19.6,7.1,32.1,37.8,85.1,17.6,77.0,10.1,80.4,50.7
+1402912,Lamine Yamal,FC Barcelona,La Liga,Midfielder,Attackers,581,6,Creative forward,-9.585,-0.2059,0.1307,96.5,93.0,97.7,97.7,100.0,100.0,100.0,100.0,96.5,15.1,60.5,37.2,26.7,6.4
+1402913,Pau Cubarsí,FC Barcelona,La Liga,Defender,Defenders,422,2,Stopper centre-back,3.5493,-1.2019,0.3462,41.2,39.5,85.8,35.1,58.1,7.1,32.1,13.5,69.6,56.1,62.8,23.6,64.2,93.2
+992587,Pedri,FC Barcelona,La Liga,Midfielder,Midfielders,502,4,Creative playmaker,-3.2965,4.8136,0.1716,72.8,68.4,57.0,92.1,52.6,90.4,51.8,58.8,97.4,56.1,3.5,98.2,43.0,5.7
+831005,Raphinha,FC Barcelona,La Liga,Midfielder,Attackers,555,6,Creative forward,-7.7323,-2.3378,0.1457,100.0,88.4,100.0,84.9,95.3,93.0,91.9,81.4,67.4,34.9,16.3,7.0,27.9,14.0
+827606,Rodri,FC Barcelona,La Liga,Midfielder,Midfielders,356,4,Creative playmaker,-0.1654,4.7415,0.157,33.8,32.0,79.8,64.9,49.1,54.4,85.1,23.7,93.9,93.0,95.6,92.1,80.7,55.3
+1546073,Xavi Espart,FC Barcelona,La Liga,Defender,Defenders,440,0,Progressive wing-back,0.3025,2.3763,0.1872,90.5,97.3,45.3,75.7,68.6,75.7,98.0,86.5,64.2,88.5,74.3,92.6,38.5,43.9
+1457536,Andrés García,Getafe,La Liga,Defender,Defenders,472,7,Defensive full-back,1.599,0.4339,0.3006,41.2,39.5,55.4,48.0,82.4,80.4,32.1,89.9,35.8,79.1,20.3,69.6,13.5,2.0
+307702,Djené,Getafe,La Liga,Defender,Defenders,596,7,Defensive full-back,3.7398,0.1517,0.2708,41.2,39.5,5.4,24.3,5.4,15.5,32.1,29.1,8.1,33.1,66.9,94.6,61.5,35.8
+336655,Enes Ünal,Getafe,La Liga,Forward,Attackers,540,5,Clinical finisher,-0.4333,-3.5531,0.2401,34.9,30.2,43.0,10.5,20.9,27.9,18.6,2.3,20.9,66.3,16.3,17.4,52.3,91.9
+1000676,Francho Serrano,Getafe,La Liga,Midfielder,Midfielders,351,3,Ball-winning midfielder,1.1922,0.653,0.238,33.8,32.0,27.2,21.1,29.8,1.8,24.6,24.6,56.1,3.5,77.2,17.5,49.1,21.1
+344847,Johan Mojica,Getafe,La Liga,Defender,Defenders,495,7,Defensive full-back,1.7231,0.2774,0.3001,41.2,39.5,43.2,84.5,74.3,91.2,32.1,70.9,35.1,57.4,18.9,76.4,53.4,27.7
+1154549,Mario Martín,Getafe,La Liga,Midfielder,Midfielders,333,3,Ball-winning midfielder,1.0435,-0.433,0.2481,33.8,32.0,55.3,12.3,65.8,13.2,24.6,6.1,12.3,5.3,48.2,21.9,70.2,86.0
+973536,Martín Satriano,Getafe,La Liga,Forward,Attackers,544,1,Wide dribbler,-1.8987,-2.3692,0.2746,33.7,60.5,19.8,31.4,43.0,40.7,39.5,73.3,32.6,16.3,61.6,44.2,80.2,77.9
+68332,Nemanja Gudelj,Getafe,La Liga,Midfielder,Midfielders,374,3,Ball-winning midfielder,1.2649,-0.318,0.2239,33.8,32.0,30.7,34.2,57.0,21.1,64.0,20.2,1.8,28.9,71.9,0.9,89.5,94.7
+793988,Orel Mangala,Getafe,La Liga,Midfielder,Midfielders,554,3,Ball-winning midfielder,1.8994,0.8068,0.1985,33.8,32.0,25.4,6.1,20.2,17.5,24.6,45.6,11.4,6.1,94.7,15.8,47.4,36.8
+1088565,Ramón Terrats,Getafe,La Liga,Midfielder,Midfielders,532,4,Creative playmaker,-1.9581,0.6362,0.2151,69.3,32.0,74.6,81.6,90.4,69.3,24.6,91.2,35.1,7.0,31.6,53.5,66.7,86.8
+1108450,Zaid Romero,Getafe,La Liga,Defender,Defenders,517,7,Defensive full-back,3.7463,1.0347,0.2006,41.2,39.5,18.9,25.0,14.9,19.6,32.1,97.3,26.4,43.9,95.3,98.0,79.1,49.3
+997244,Adrián de la Fuente,Levante UD,La Liga,Defender,Defenders,521,7,Defensive full-back,1.8603,-0.2147,0.2486,86.5,39.5,77.7,97.3,86.5,37.2,70.3,30.4,56.8,22.3,67.6,62.8,73.6,25.7
+122810,Aïssa Mandi,Levante UD,La Liga,Defender,Defenders,513,2,Stopper centre-back,3.6901,-0.7114,0.3783,41.2,39.5,22.3,8.1,15.5,37.8,71.6,54.7,7.4,54.1,72.3,31.8,79.7,66.2
+996974,Enzo Bardeli,Levante UD,La Liga,Midfielder,Midfielders,380,4,Creative playmaker,-1.1061,1.845,0.2408,85.5,79.8,14.9,57.9,19.3,71.1,63.2,43.9,10.5,63.2,59.6,14.0,1.8,20.2
+1014042,Iván Romero,Levante UD,La Liga,Forward,Attackers,379,5,Clinical finisher,-3.4321,-4.2761,0.2763,72.1,30.2,88.4,30.2,90.7,30.2,62.8,62.8,12.8,43.0,16.3,55.8,37.2,69.8
+1010383,Jon Ander Olasagasti,Levante UD,La Liga,Midfielder,Midfielders,505,4,Creative playmaker,-1.6022,2.1426,0.2829,71.9,67.5,62.3,64.0,51.8,70.2,86.0,57.9,21.9,72.8,56.1,31.6,33.3,67.1
+984789,Manuel Sánchez,Levante UD,La Liga,Defender,Defenders,521,7,Defensive full-back,3.4323,0.745,0.2495,41.2,39.5,11.5,27.7,14.2,18.9,32.1,68.9,29.1,100.0,51.4,52.0,34.5,21.6
+859769,Oriol Rey,Levante UD,La Liga,Midfielder,Midfielders,473,3,Ball-winning midfielder,1.7261,0.6781,0.2903,33.8,32.0,3.5,7.9,2.6,6.1,24.6,6.1,19.3,29.8,34.2,52.6,85.1,71.1
+909554,Roger Brugué,Levante UD,La Liga,Midfielder,Attackers,444,5,Clinical finisher,-2.0879,-3.9293,0.2644,80.2,30.2,80.2,32.6,60.5,8.1,18.6,5.8,5.8,83.7,41.3,62.8,46.5,60.5
+997221,Carlos Dotor,Málaga CF,La Liga,Midfielder,Midfielders,467,3,Ball-winning midfielder,0.0967,1.9358,0.3456,75.4,32.0,48.2,33.3,30.7,43.0,24.6,59.6,64.0,81.6,43.9,66.7,19.3,29.8
+1164708,Carlos Puga,Málaga CF,La Liga,Defender,Defenders,343,7,Defensive full-back,2.3363,1.4681,0.1773,41.2,39.5,17.6,41.9,25.0,57.4,32.1,100.0,75.0,97.3,85.1,35.1,39.9,13.5
+1913386,Chupete,Málaga CF,La Liga,Forward,Attackers,563,5,Clinical finisher,-1.1552,-4.2231,0.2752,32.6,30.2,72.1,5.2,46.5,12.8,18.6,15.1,18.6,58.1,34.9,4.7,93.0,66.3
+1465424,Dani Lorenzo,Málaga CF,La Liga,Midfielder,Midfielders,411,3,Ball-winning midfielder,-0.0916,2.5356,0.2206,33.8,32.0,45.6,27.2,18.4,37.7,24.6,96.5,65.8,39.5,54.4,84.2,27.2,5.7
+1002405,David Larrubia,Málaga CF,La Liga,Midfielder,Midfielders,574,3,Ball-winning midfielder,-0.999,2.3324,0.2119,33.8,32.0,58.8,48.2,73.7,65.8,24.6,97.4,57.9,82.5,58.8,50.0,3.5,11.4
+344797,Einar Galilea,Málaga CF,La Liga,Defender,Defenders,469,7,Defensive full-back,3.6084,-0.7324,0.2643,41.2,39.5,5.4,3.4,5.4,7.1,32.1,85.1,3.4,46.6,66.2,16.9,70.3,4.1
+1493488,Izan Merino,Málaga CF,La Liga,Midfielder,Midfielders,421,3,Ball-winning midfielder,1.0504,0.6169,0.2445,33.8,32.0,9.6,14.9,6.1,25.4,24.6,6.1,36.8,24.6,36.8,7.0,52.6,5.7
+904964,Joaquín Muñoz,Málaga CF,La Liga,Midfielder,Midfielders,389,3,Ball-winning midfielder,-0.3201,0.8261,0.2411,33.8,32.0,35.1,39.5,54.4,41.2,24.6,82.5,22.8,28.1,14.0,28.1,8.8,5.7
+1068891,Jose Salinas,Málaga CF,La Liga,Defender,Defenders,360,7,Defensive full-back,2.9038,-0.4878,0.3523,41.2,39.5,15.9,10.1,22.3,28.7,32.1,66.2,41.6,66.6,48.3,17.6,15.5,31.8
+927066,Pablo Martínez,Málaga CF,La Liga,Midfielder,Midfielders,307,4,Creative playmaker,-0.8318,2.0853,0.2172,33.8,84.2,31.6,65.8,55.3,84.2,24.6,6.1,33.3,19.3,69.3,30.7,55.3,44.3
+1595666,Rafa Garrido,Málaga CF,La Liga,Defender,Defenders,562,7,Defensive full-back,2.5719,0.6778,0.3036,41.2,39.5,14.9,22.6,12.2,16.9,32.1,98.0,77.0,47.3,63.5,79.7,31.8,10.8
+1123218,Ángel Recio,Málaga CF,La Liga,Defender,Defenders,630,7,Defensive full-back,3.0669,-0.736,0.3429,41.2,39.5,31.8,7.1,48.0,14.5,32.1,27.4,15.2,42.9,40.2,48.0,46.3,23.0
+1010165,Abel Bretones,Osasuna,La Liga,Defender,Defenders,529,7,Defensive full-back,1.9818,1.2328,0.287,41.2,39.5,16.9,66.2,28.4,55.4,93.9,54.1,61.5,89.2,29.1,87.8,11.5,40.5
+900792,Alejandro Catena,Osasuna,La Liga,Defender,Defenders,540,2,Stopper centre-back,3.463,-1.1084,0.4022,41.2,39.5,5.4,29.7,5.4,17.6,32.1,52.7,54.1,20.9,27.7,52.7,77.7,83.1
+37318,Ante Budimir,Osasuna,La Liga,Forward,Attackers,502,5,Clinical finisher,-2.3896,-5.827,0.2297,91.9,30.2,91.9,19.8,80.2,5.8,18.6,33.7,3.5,76.7,16.3,12.8,69.8,95.3
+1119586,Iker Muñoz,Osasuna,La Liga,Midfielder,Defenders,476,2,Stopper centre-back,2.5578,-1.0721,0.2487,41.2,39.5,34.8,40.5,31.8,60.8,32.1,71.6,75.7,3.4,65.5,4.7,26.4,65.5
+1495856,Iñigo Arguibide,Osasuna,La Liga,Defender,Defenders,566,7,Defensive full-back,1.8261,-0.4606,0.2524,41.2,39.5,28.4,48.6,38.5,34.5,67.6,88.5,6.1,68.2,13.5,14.9,2.7,2.0
+976141,Jon Moncayola,Osasuna,La Liga,Midfielder,Midfielders,493,3,Ball-winning midfielder,1.631,1.2728,0.3033,33.8,32.0,17.5,24.6,15.8,4.4,24.6,13.2,23.7,84.2,64.9,20.2,43.9,28.9
+997280,Raúl García de Haro,Osasuna,La Liga,Forward,Attackers,357,1,Wide dribbler,-2.0932,-2.4737,0.2141,15.1,74.4,47.7,14.0,66.3,14.0,68.6,34.9,39.5,7.6,16.3,64.0,59.3,72.1
+260031,Rubén García,Osasuna,La Liga,Midfielder,Defenders,369,0,Progressive wing-back,0.4412,1.2263,0.219,41.2,39.5,82.4,100.0,91.9,95.9,85.1,64.2,45.3,93.9,14.5,59.5,24.3,51.4
+928672,Adrià Pedrosa,Rayo Vallecano,La Liga,Defender,Defenders,398,0,Progressive wing-back,-1.4202,1.124,0.1983,94.6,91.2,45.9,99.3,73.6,98.6,99.3,93.2,48.6,60.1,11.5,20.3,20.3,20.9
+965031,Andrei Rațiu,Rayo Vallecano,La Liga,Defender,Defenders,540,7,Defensive full-back,1.1606,0.477,0.2954,85.1,39.5,83.8,51.4,83.1,70.3,68.9,96.6,79.1,50.7,57.4,83.8,18.9,18.2
+88528,Florian Lejeune,Rayo Vallecano,La Liga,Defender,Defenders,630,2,Stopper centre-back,3.447,-1.0411,0.3092,41.2,39.5,68.9,12.2,96.6,14.5,32.1,50.3,13.5,30.4,84.5,64.2,85.8,59.5
+900003,Jorge de Frutos,Rayo Vallecano,La Liga,Forward,Attackers,373,1,Wide dribbler,-0.7872,-0.5028,0.2059,15.1,72.1,2.3,27.9,2.3,31.4,18.6,75.6,15.1,94.2,16.3,57.0,38.4,47.7
+913679,Pathé Ismaël Ciss,Rayo Vallecano,La Liga,Midfielder,Midfielders,630,3,Ball-winning midfielder,3.1405,1.2804,0.203,33.8,32.0,47.4,3.5,17.5,14.5,24.6,26.3,6.1,47.8,96.5,76.3,99.1,93.9
+900669,Pedro Díaz,Rayo Vallecano,La Liga,Midfielder,Midfielders,322,4,Creative playmaker,-2.1468,1.524,0.1929,33.8,32.0,68.4,38.6,94.7,92.1,24.6,75.4,62.3,36.8,18.4,54.4,11.4,5.7
+910024,Sergio Camello,Rayo Vallecano,La Liga,Forward,Attackers,470,5,Clinical finisher,-4.2964,-2.916,0.2137,97.7,61.6,73.3,51.2,88.4,68.6,18.6,54.7,51.2,62.8,16.3,70.9,15.1,27.9
+588566,Unai López,Rayo Vallecano,La Liga,Midfielder,Midfielders,556,4,Creative playmaker,-2.4755,3.6674,0.2024,33.8,95.6,36.8,82.5,33.3,87.7,83.3,55.3,57.0,75.4,37.7,41.2,39.5,51.8
+345111,Álvaro García,Rayo Vallecano,La Liga,Midfielder,Defenders,530,0,Progressive wing-back,-0.4368,-0.476,0.1934,98.0,96.6,98.0,78.4,97.3,54.7,93.2,67.6,19.6,41.9,58.1,55.4,6.1,12.2
+900008,Óscar Valentín,Rayo Vallecano,La Liga,Midfielder,Midfielders,372,3,Ball-winning midfielder,2.6934,1.2815,0.2897,33.8,32.0,1.3,4.8,1.3,21.9,24.6,21.5,8.8,74.1,80.7,51.8,97.4,92.1
+958380,Antony,Real Betis,La Liga,Midfielder,Attackers,522,6,Creative forward,-3.9302,0.0524,0.1739,15.1,30.2,62.8,79.1,97.7,61.6,40.7,77.9,97.7,59.3,79.1,83.7,29.1,46.5
+887055,Cucho Hernández,Real Betis,La Liga,Forward,Attackers,444,5,Clinical finisher,-3.482,-2.831,0.2951,62.8,64.0,67.4,40.7,48.8,41.9,79.1,55.8,57.0,18.6,41.3,43.0,62.8,68.6
+1177404,Facundo Bernal,Real Betis,La Liga,Midfielder,Midfielders,418,3,Ball-winning midfielder,1.809,1.1409,0.2953,33.8,32.0,42.1,8.8,58.8,7.9,24.6,38.2,14.9,37.7,87.7,68.4,86.8,75.4
+851271,Fran García,Real Betis,La Liga,Defender,Defenders,481,0,Progressive wing-back,1.6783,1.8405,0.331,41.2,82.4,5.4,64.9,5.4,79.1,72.3,55.4,81.1,70.9,64.9,86.5,4.7,14.9
+188365,Héctor Bellerín,Real Betis,La Liga,Defender,Defenders,514,0,Progressive wing-back,1.2917,1.1851,0.3235,41.2,39.5,81.1,88.9,43.9,93.9,70.9,31.1,73.0,80.4,41.9,58.8,25.0,14.2
+103417,Isco,Real Betis,La Liga,Midfielder,Midfielders,327,4,Creative playmaker,-2.8702,2.0529,0.1705,33.8,32.0,86.8,85.1,93.0,99.1,24.6,64.0,90.4,1.3,65.8,39.5,10.5,23.2
+99519,Marc Bartra,Real Betis,La Liga,Defender,Defenders,333,2,Stopper centre-back,3.6733,-1.3374,0.2194,96.6,39.5,75.0,6.1,90.5,32.4,32.1,48.0,20.9,93.2,53.4,31.1,97.3,84.5
+847128,Marc Roca,Real Betis,La Liga,Midfielder,Midfielders,416,4,Creative playmaker,-0.1605,4.1101,0.1979,33.8,75.4,21.9,68.4,26.3,36.8,80.7,18.4,37.7,78.1,78.1,97.4,65.8,62.3
+1015287,Natan,Real Betis,La Liga,Defender,Defenders,540,2,Stopper centre-back,3.2381,-1.3119,0.2565,85.1,39.5,66.9,14.9,41.6,52.4,32.1,52.7,27.7,76.0,2.0,45.6,98.0,68.9
+1129401,Nelson Deossa,Real Betis,La Liga,Midfielder,Midfielders,319,4,Creative playmaker,-2.0231,3.3968,0.1675,33.8,83.3,73.7,51.8,100.0,58.8,69.3,93.0,85.1,85.1,67.5,96.5,92.1,97.4
+816763,Pablo Fornals,Real Betis,La Liga,Midfielder,Midfielders,455,4,Creative playmaker,-1.2537,3.407,0.1888,33.8,32.0,53.5,54.4,71.9,85.1,24.6,60.5,82.5,9.6,60.5,99.1,6.1,30.7
+989113,Rodrigo Riquelme,Real Betis,La Liga,Midfielder,Attackers,308,1,Wide dribbler,-3.1192,-1.2682,0.1756,77.9,30.2,55.8,52.3,34.9,76.7,75.6,86.0,75.6,31.4,96.5,41.9,68.6,25.6
+1091116,Arda Güler,Real Madrid,La Liga,Midfielder,Midfielders,353,6,Creative forward,-6.8756,4.2292,0.148,87.7,96.5,99.1,100.0,89.5,100.0,100.0,93.9,95.6,52.2,16.7,86.0,17.5,39.5
+1176744,Dean Huijsen,Real Madrid,La Liga,Defender,Defenders,502,2,Stopper centre-back,3.1762,-0.6887,0.3355,41.2,39.5,88.5,53.4,81.1,39.2,32.1,13.5,62.8,44.6,89.2,33.1,74.3,62.2
+759520,Denzel Dumfries,Real Madrid,La Liga,Midfielder,Defenders,415,7,Defensive full-back,1.8751,-0.6235,0.2669,41.2,39.5,75.7,46.6,89.2,77.7,32.1,13.5,58.1,77.7,27.0,6.8,4.1,26.4
+831808,Federico Valverde,Real Madrid,La Liga,Midfielder,Midfielders,564,3,Ball-winning midfielder,0.0732,1.9192,0.293,33.8,65.8,43.9,36.8,46.1,32.5,24.6,44.7,84.2,60.5,45.6,33.3,64.0,56.1
+826215,Ibrahima Konaté,Real Madrid,La Liga,Defender,Defenders,540,2,Stopper centre-back,2.7324,-1.1173,0.3073,41.2,39.5,72.3,10.1,59.5,35.5,32.1,13.5,20.3,20.9,16.2,75.0,40.5,64.2
+991011,Jude Bellingham,Real Madrid,La Liga,Midfielder,Midfielders,529,6,Creative forward,-5.6897,3.4694,0.1659,93.9,86.8,81.6,87.7,87.7,95.6,90.4,100.0,77.2,79.8,32.5,64.9,31.6,40.4
+826643,Kylian Mbappé,Real Madrid,La Liga,Forward,Attackers,630,6,Creative forward,-7.7991,-1.9754,0.1461,94.8,79.1,98.8,91.9,98.8,70.9,80.2,98.8,94.2,29.1,32.6,18.6,7.0,12.8
+794939,Marc Cucurella,Real Madrid,La Liga,Defender,Defenders,430,7,Defensive full-back,2.567,0.6113,0.3293,41.2,39.5,5.4,41.2,5.4,43.2,32.1,13.5,82.4,67.6,26.4,83.1,12.2,25.0
+868812,Vinícius Júnior,Real Madrid,La Liga,Forward,Attackers,565,6,Creative forward,-6.3556,-0.0554,0.2366,31.4,87.2,69.8,90.7,87.2,90.7,84.9,80.2,80.2,55.8,16.3,60.5,7.0,6.4
+1010792,Alvaro Mantilla,Real Racing Club,La Liga,Defender,Defenders,512,7,Defensive full-back,3.1593,-0.285,0.4447,41.2,39.5,44.6,37.5,29.1,20.3,32.1,31.8,38.5,72.6,43.2,47.3,51.4,35.1
+973699,Iván Martín,Real Racing Club,La Liga,Midfielder,Midfielders,399,3,Ball-winning midfielder,0.2882,1.6207,0.2082,33.8,32.0,11.0,18.9,8.3,28.1,61.8,77.6,73.7,93.9,3.5,6.1,68.4,53.5
+605674,Iñigo Vicente,Real Racing Club,La Liga,Midfielder,Midfielders,544,4,Creative playmaker,-3.7593,5.6362,0.1683,33.8,86.0,36.0,98.2,27.2,93.9,84.2,85.1,96.5,70.2,40.4,77.2,40.4,13.2
+1861680,Jorge Salinas,Real Racing Club,La Liga,Defender,Defenders,548,7,Defensive full-back,2.4122,1.2112,0.2662,41.2,80.4,58.8,98.0,27.7,50.0,68.2,64.9,52.7,81.8,79.7,82.4,71.6,72.3
+851268,Manu Hernando,Real Racing Club,La Liga,Defender,Defenders,397,2,Stopper centre-back,4.4879,-2.757,0.262,41.2,39.5,36.5,0.7,60.8,7.1,32.1,13.5,0.7,29.7,44.6,0.7,100.0,79.7
+962381,Pablo Ramón,Real Racing Club,La Liga,Defender,Defenders,382,7,Defensive full-back,4.3405,0.6942,0.2385,41.2,39.5,19.6,13.2,37.8,26.4,32.1,63.5,22.3,92.6,90.5,91.2,87.8,70.9
+41560,Sergio Canales,Real Racing Club,La Liga,Midfielder,Midfielders,507,3,Ball-winning midfielder,-0.7032,0.3761,0.2546,71.1,32.0,69.3,36.0,80.7,19.3,24.6,73.7,50.0,41.2,23.7,46.5,12.3,28.1
+1606013,Yassir Zabiri,Real Racing Club,La Liga,Forward,Attackers,386,5,Clinical finisher,-2.995,-5.0359,0.2013,98.8,30.2,93.0,15.7,83.7,11.6,18.6,52.3,34.9,79.1,52.3,1.2,57.0,23.3
+966862,Ander Barrenetxea,Real Sociedad,La Liga,Midfielder,Attackers,317,1,Wide dribbler,-2.3292,-2.2443,0.1899,76.2,30.2,26.7,15.7,41.9,4.7,18.6,93.0,54.7,48.8,57.0,76.7,41.9,6.4
+832427,Carlos Soler,Real Sociedad,La Liga,Midfielder,Midfielders,470,4,Creative playmaker,-2.7293,2.8506,0.2319,74.6,88.6,78.1,61.4,46.1,78.1,73.7,51.8,55.3,17.5,24.6,91.2,37.7,14.0
+838159,Igor Zubeldia,Real Sociedad,La Liga,Defender,Defenders,393,7,Defensive full-back,3.9365,-0.2607,0.2769,41.2,39.5,5.4,22.6,5.4,46.6,32.1,13.5,11.5,87.2,87.8,13.5,50.7,54.7
+1116388,Jon Aramburu,Real Sociedad,La Liga,Defender,Defenders,597,7,Defensive full-back,3.6253,1.298,0.2137,41.2,39.5,29.1,39.5,53.4,66.2,32.1,83.1,78.4,96.6,98.6,60.1,50.0,76.4
+1466116,Jon Martin,Real Sociedad,La Liga,Defender,Defenders,456,2,Stopper centre-back,3.4162,-1.7681,0.4104,41.2,39.5,65.5,13.2,50.7,20.9,32.1,13.5,2.0,34.8,21.6,40.5,65.5,85.1
+949156,Luka Sučić,Real Sociedad,La Liga,Midfielder,Midfielders,551,4,Creative playmaker,-2.4377,0.3922,0.2309,93.0,32.0,70.2,60.5,81.6,56.1,72.8,71.9,46.5,26.3,21.9,35.1,5.3,37.7
+823622,Mikel Oyarzabal,Real Sociedad,La Liga,Forward,Attackers,478,1,Wide dribbler,-2.8988,-0.1342,0.2136,15.1,81.4,40.7,75.6,37.2,80.2,43.0,4.7,61.6,61.6,69.8,69.8,7.0,58.1
+1026015,Orri Óskarsson,Real Sociedad,La Liga,Forward,Attackers,318,5,Clinical finisher,-1.867,-5.1999,0.2799,52.9,30.2,81.4,9.3,54.7,16.9,18.6,12.8,9.3,7.6,16.3,11.6,25.6,82.6
+855835,Sergio Gómez,Real Sociedad,La Liga,Defender,Defenders,591,7,Defensive full-back,1.4767,1.584,0.2865,41.2,39.5,41.9,68.9,54.7,87.8,65.5,83.8,70.9,71.6,35.1,95.3,23.6,16.2
+839585,Yangel Herrera,Real Sociedad,La Liga,Midfielder,Midfielders,403,3,Ball-winning midfielder,0.1979,0.4779,0.2762,82.5,32.0,33.3,9.6,43.0,8.8,60.5,41.2,36.0,59.6,13.2,36.0,29.4,78.1
+1428699,Andrés Castrin,Sevilla,La Liga,Defender,Defenders,480,2,Stopper centre-back,3.2999,-0.7901,0.3698,41.2,39.5,50.7,11.5,31.1,60.1,32.1,33.1,18.2,12.2,55.4,68.2,75.0,52.0
+818986,Gabriel Suazo,Sevilla,La Liga,Defender,Defenders,630,7,Defensive full-back,2.2648,1.4887,0.2351,41.2,39.5,10.8,70.3,10.8,88.5,32.1,50.3,81.8,99.3,19.6,74.3,21.6,46.3
+788141,Jon Guridi,Sevilla,La Liga,Midfielder,Midfielders,361,3,Ball-winning midfielder,-0.4271,0.3428,0.2657,86.8,32.0,85.1,11.4,47.4,31.6,64.9,46.5,28.1,46.5,15.8,63.2,35.1,89.5
+949707,Juan Iglesias,Sevilla,La Liga,Defender,Defenders,630,7,Defensive full-back,2.2357,-0.5339,0.3516,82.4,39.5,70.3,55.4,48.0,44.6,32.1,85.8,46.6,79.7,30.4,20.9,46.3,31.8
+1097719,Kike Salas,Sevilla,La Liga,Defender,Defenders,448,2,Stopper centre-back,2.9372,-1.2476,0.3138,41.2,39.5,51.4,60.8,85.8,42.6,32.1,13.5,34.5,38.5,9.5,77.7,76.4,93.9
+960006,Lucien Agoumé,Sevilla,La Liga,Midfielder,Midfielders,630,3,Ball-winning midfielder,1.6013,3.2933,0.2406,33.8,32.0,15.8,43.0,28.1,14.5,49.1,50.9,54.4,97.4,86.8,85.1,88.6,34.2
+2509247,Miguel Sierra,Sevilla,La Liga,Midfielder,Attackers,496,1,Wide dribbler,-2.2781,-0.5924,0.2022,58.1,30.2,14.0,44.2,26.7,57.0,18.6,96.5,55.8,91.9,37.2,96.5,30.2,62.8
+1142351,Robbie Ure,Sevilla,La Liga,Forward,Attackers,397,1,Wide dribbler,-1.2129,-2.2954,0.2025,15.1,69.8,12.8,17.4,12.8,38.4,18.6,10.5,31.4,7.6,16.3,28.5,7.0,53.5
+827064,Arnaut Danjuma,Valencia,La Liga,Forward,Attackers,526,1,Wide dribbler,-2.5292,-2.3315,0.2161,15.1,30.2,48.8,76.7,57.0,53.5,18.6,76.7,41.9,17.4,36.0,9.3,14.0,15.1
+996928,César Tárrega,Valencia,La Liga,Defender,Defenders,330,7,Defensive full-back,3.7649,-0.2611,0.3236,41.2,39.5,54.1,15.5,68.6,7.1,32.1,13.5,28.4,81.1,54.1,66.9,81.4,37.5
+857482,Filip Ugrinić,Valencia,La Liga,Midfielder,Midfielders,509,3,Ball-winning midfielder,0.5558,0.7149,0.3099,33.8,32.0,50.9,32.5,50.9,29.8,24.6,49.1,48.2,40.4,41.2,13.2,73.7,26.3
+609752,Guido Rodríguez,Valencia,La Liga,Midfielder,Midfielders,317,3,Ball-winning midfielder,2.2933,2.8098,0.2127,33.8,32.0,18.4,7.0,23.7,24.6,24.6,50.0,28.9,99.1,85.1,87.7,78.1,95.6
+1122610,Javier Guerra,Valencia,La Liga,Midfielder,Midfielders,565,4,Creative playmaker,-1.6185,1.1057,0.2386,33.8,64.9,61.4,45.6,70.2,42.1,71.1,92.1,9.6,23.7,7.0,36.8,26.3,12.3
+996929,Jesús Vázquez,Valencia,La Liga,Defender,Defenders,355,7,Defensive full-back,2.2597,0.8492,0.2947,41.2,39.5,24.0,45.3,42.6,31.1,32.1,92.6,60.8,91.2,34.5,65.5,5.4,5.4
+227922,José Luis Gayà,Valencia,La Liga,Defender,Defenders,360,7,Defensive full-back,2.7475,0.7802,0.2282,41.2,39.5,12.8,18.2,22.3,52.4,32.1,77.0,15.2,98.6,5.1,84.5,36.5,4.7
+788216,Pablo Maffeo,Valencia,La Liga,Defender,Defenders,330,7,Defensive full-back,2.1061,0.3346,0.2656,41.2,39.5,33.8,35.8,45.9,58.1,90.5,93.9,53.4,23.3,89.9,58.1,25.7,37.5
+826948,Pepelu,Valencia,La Liga,Midfielder,Midfielders,568,3,Ball-winning midfielder,2.4536,0.875,0.2457,33.8,32.0,8.8,15.8,14.9,3.5,24.6,6.1,7.9,22.8,76.3,64.0,98.2,36.0
+1012444,Alberto Moleiro,Villarreal,La Liga,Midfielder,Attackers,410,6,Creative forward,-7.3106,1.3486,0.172,69.8,95.3,59.3,100.0,39.5,98.8,97.7,58.1,100.0,74.4,16.3,31.4,20.9,6.4
+1184541,Alexander Freeman,Villarreal,La Liga,Defender,Defenders,314,0,Progressive wing-back,1.2007,2.4523,0.1789,41.2,39.5,62.2,64.2,71.6,84.5,32.1,90.5,100.0,83.1,20.9,97.3,33.8,60.8
+345195,Ayoze Pérez,Villarreal,La Liga,Forward,Attackers,351,6,Creative forward,-5.1926,-2.1345,0.1628,48.8,89.5,96.5,59.3,93.0,69.8,86.0,22.1,50.0,44.2,54.7,40.7,7.0,37.2
+1396048,Carlos Romero,Villarreal,La Liga,Defender,Defenders,387,7,Defensive full-back,1.2309,1.4691,0.2193,41.2,39.5,56.1,63.5,75.7,47.3,32.1,94.6,95.3,62.2,12.2,96.6,8.8,22.3
+1009372,Georges Mikautadze,Villarreal,La Liga,Forward,Attackers,419,6,Creative forward,-6.8485,-1.7884,0.1731,68.0,67.4,94.2,94.2,96.5,66.3,81.4,91.9,86.0,7.6,47.7,30.2,33.7,6.4
+593526,Nicolas Pépé,Villarreal,La Liga,Forward,Attackers,423,6,Creative forward,-5.2104,0.447,0.1853,66.3,30.2,32.6,89.5,76.7,83.7,55.8,95.3,98.8,57.0,46.5,79.1,18.6,19.8
+879694,Pape Gueye,Villarreal,La Liga,Midfielder,Midfielders,526,4,Creative playmaker,-1.4134,1.3088,0.1953,94.7,32.0,82.5,53.5,50.0,57.9,24.6,28.9,91.2,7.9,53.5,73.7,42.1,25.0
+1087359,Renato Veiga,Villarreal,La Liga,Defender,Defenders,630,2,Stopper centre-back,2.1839,0.2146,0.2425,41.2,79.4,40.5,87.8,36.5,44.6,64.5,50.3,76.4,2.7,73.6,54.7,75.7,46.3
+843678,Santi Comesaña,Villarreal,La Liga,Midfielder,Midfielders,357,3,Ball-winning midfielder,0.4375,3.1456,0.2052,33.8,32.0,67.5,79.8,11.4,45.6,24.6,47.4,88.6,68.4,90.4,44.7,64.9,5.7
+1468046,Santiago Mouriño,Villarreal,La Liga,Defender,Defenders,337,0,Progressive wing-back,1.3735,2.3837,0.1973,41.2,39.5,60.1,91.2,44.6,74.3,89.2,70.3,89.9,98.0,6.1,99.3,35.1,54.1
+973290,Tajon Buchanan,Villarreal,La Liga,Midfielder,Attackers,378,1,Wide dribbler,-2.9403,0.6723,0.2364,15.1,30.2,52.3,80.2,59.3,82.6,64.0,53.5,90.7,89.5,66.3,91.9,58.1,34.9
+846036,Ben White,Arsenal,Premier League,Defender,Defenders,315,0,Progressive wing-back,1.2488,0.7423,0.2423,41.2,94.9,63.5,73.0,26.4,76.4,32.1,72.3,97.3,60.8,40.2,18.9,28.4,59.5
+934235,Bukayo Saka,Arsenal,Premier League,Forward,Attackers,418,5,Clinical finisher,-4.3427,-1.6375,0.1594,82.6,30.2,87.2,81.4,81.4,67.4,18.6,74.4,93.0,88.4,75.6,75.6,79.1,30.2
+1031259,Christos Tzolis,Arsenal,Premier League,Midfielder,Attackers,365,1,Wide dribbler,-1.9924,0.4843,0.227,15.1,73.3,4.7,68.6,4.7,84.9,66.3,11.6,84.9,81.4,68.6,53.5,83.7,61.6
+856714,Declan Rice,Arsenal,Premier League,Midfielder,Midfielders,414,4,Creative playmaker,-1.4167,3.357,0.2037,33.8,94.7,23.7,69.3,40.4,62.3,57.9,39.5,94.7,38.6,64.0,34.2,84.2,63.2
+869792,Gabriel Magalhães,Arsenal,Premier League,Defender,Defenders,450,2,Stopper centre-back,2.925,-1.0711,0.3817,41.2,39.5,85.1,49.7,77.4,23.3,32.1,34.8,65.2,14.9,59.8,43.6,73.0,68.9
+836705,Kai Havertz,Arsenal,Premier League,Forward,Attackers,438,5,Clinical finisher,-1.7083,-3.7277,0.2843,64.0,30.2,58.1,43.0,36.0,43.0,18.6,7.0,66.3,7.6,73.3,14.0,47.7,83.7
+547410,Martin Ødegaard,Arsenal,Premier League,Midfielder,Midfielders,382,4,Creative playmaker,-4.4837,2.4098,0.1545,92.1,32.0,87.7,96.5,66.7,94.7,91.2,43.0,92.1,45.6,14.9,12.3,46.5,5.7
+957602,Riccardo Calafiori,Arsenal,Premier League,Defender,Defenders,418,0,Progressive wing-back,-0.2351,-0.5649,0.1799,41.2,99.3,91.9,89.9,93.9,77.0,82.4,13.5,68.2,6.1,3.4,24.3,18.2,66.9
+826204,Boubacar Kamara,Aston Villa,Premier League,Midfielder,Midfielders,444,3,Ball-winning midfielder,0.268,1.5382,0.2716,33.8,71.9,22.8,20.2,4.4,35.1,55.3,53.5,52.6,71.9,27.6,21.9,70.2,88.6
+783126,Emiliano Buendía,Aston Villa,Premier League,Midfielder,Attackers,404,1,Wide dribbler,-1.2527,-1.102,0.3036,44.2,30.2,39.5,36.0,32.6,46.5,18.6,50.0,62.8,75.6,81.4,89.5,22.1,64.0
+976263,Ian Maatsen,Aston Villa,Premier League,Defender,Defenders,330,7,Defensive full-back,2.2326,-0.0916,0.2326,41.2,39.5,76.4,86.5,91.2,33.1,32.1,48.6,68.9,23.3,93.2,21.6,32.4,6.1
+250223,John McGinn,Aston Villa,Premier League,Midfielder,Midfielders,436,4,Creative playmaker,-0.983,1.5788,0.2029,33.8,92.5,71.1,29.8,38.6,51.8,56.1,36.0,25.4,12.3,63.2,29.8,25.0,18.4
+98435,Ross Barkley,Aston Villa,Premier League,Midfielder,Midfielders,320,3,Ball-winning midfielder,-0.8996,1.4022,0.2255,33.8,32.0,60.5,22.4,75.4,68.4,24.6,76.3,74.6,61.4,3.5,56.1,54.4,60.5
+143334,Victor Lindelöf,Aston Villa,Premier League,Defender,Defenders,450,2,Stopper centre-back,2.1736,-1.9651,0.2105,41.2,39.5,81.8,45.9,17.2,64.2,32.1,13.5,32.1,1.4,2.7,4.1,49.0,9.1
+44566,Adam Smith,Bournemouth,Premier League,Defender,Defenders,435,2,Stopper centre-back,2.6776,-0.8713,0.2941,41.2,39.5,12.2,33.1,20.3,67.9,32.1,38.5,25.0,18.2,38.5,33.8,27.0,44.6
+999028,Adrien Truffert,Bournemouth,Premier League,Defender,Defenders,450,7,Defensive full-back,2.699,1.1957,0.3694,41.2,39.5,37.8,62.2,66.6,73.0,32.1,73.6,80.1,85.1,69.9,85.8,52.7,41.9
+1104986,Alex Scott,Bournemouth,Premier League,Midfielder,Midfielders,446,3,Ball-winning midfielder,-0.4255,2.9479,0.1983,78.9,32.0,65.8,46.5,61.4,80.7,24.6,62.3,58.8,50.4,83.3,95.6,63.2,46.5
+1006069,António Silva,Bournemouth,Premier League,Defender,Defenders,450,2,Stopper centre-back,3.8379,-1.4652,0.288,41.2,39.5,94.6,59.5,66.6,23.3,32.1,13.5,67.6,36.8,86.5,26.4,95.3,98.0
+998490,Evanilson,Bournemouth,Premier League,Forward,Attackers,425,6,Creative forward,-2.4088,-0.6332,0.1629,15.1,94.2,36.0,62.8,22.1,58.1,90.7,19.8,19.8,39.5,86.0,46.5,86.0,76.7
+1156586,James Hill,Bournemouth,Premier League,Defender,Defenders,450,2,Stopper centre-back,2.5933,-0.2704,0.2191,41.2,39.5,5.4,94.6,5.4,86.1,94.6,13.5,32.1,50.7,59.8,11.8,83.4,89.2
+895576,Marcus Tavernier,Bournemouth,Premier League,Midfielder,Midfielders,427,4,Creative playmaker,-3.8632,1.0892,0.1679,98.2,32.0,95.6,83.3,88.6,71.9,89.5,64.9,40.4,69.3,3.5,78.1,51.8,50.9
+1464966,Rayan,Bournemouth,Premier League,Midfielder,Attackers,438,5,Clinical finisher,-0.9257,-3.1139,0.2169,15.1,30.2,33.7,48.8,50.0,23.3,52.3,18.6,33.7,52.3,64.0,3.5,64.0,90.7
+1016907,Igor Thiago,Brentford,Premier League,Forward,Attackers,443,5,Clinical finisher,-1.8818,-4.3788,0.2783,38.4,30.2,83.7,23.3,61.6,9.3,18.6,29.1,46.5,38.4,16.3,36.0,32.6,88.4
+972421,Keane Lewis-Potter,Brentford,Premier League,Defender,Midfielders,409,4,Creative playmaker,-1.8745,0.9312,0.3021,81.6,76.3,88.6,78.9,76.3,64.0,59.6,56.1,39.5,27.2,55.3,24.6,87.7,64.9
+1006387,Kevin Schade,Brentford,Premier League,Midfielder,Attackers,448,5,Clinical finisher,-1.9196,-3.1668,0.2542,79.1,30.2,53.5,39.5,58.1,22.1,18.6,40.7,48.8,82.6,16.3,88.4,75.6,87.2
+576384,Kristoffer Ajer,Brentford,Premier League,Defender,Defenders,450,2,Stopper centre-back,4.1114,-2.0934,0.2871,41.2,39.5,41.2,22.6,33.8,64.2,32.1,13.5,21.6,4.7,69.9,11.8,93.2,99.0
+1064697,Mamadou Sangare,Brentford,Premier League,Midfielder,Midfielders,322,4,Creative playmaker,-1.0452,3.9389,0.2042,33.8,82.5,63.2,80.7,68.4,48.2,68.4,86.8,53.5,90.4,84.2,88.6,61.4,78.9
+814873,Vitaly Janelt,Brentford,Premier League,Midfielder,Midfielders,450,3,Ball-winning midfielder,1.0162,1.9783,0.1981,90.4,32.0,59.6,47.4,31.6,44.3,24.6,14.5,43.9,91.2,100.0,43.4,62.3,57.9
+1416535,Charalampos Kostoulas,Brighton & Hove Albion,Premier League,Forward,Attackers,356,5,Clinical finisher,-2.7684,-3.1722,0.2309,73.3,75.6,57.0,2.3,84.9,15.1,18.6,64.0,40.7,24.4,16.3,93.0,84.9,73.3
+1065588,Diego Gómez,Brighton & Hove Albion,Premier League,Midfielder,Midfielders,436,4,Creative playmaker,-2.0045,1.3803,0.1814,33.8,92.5,71.9,72.8,91.2,60.5,78.9,17.5,42.1,67.5,51.8,25.4,25.0,100.0
+825844,Ferdi Kadıoğlu,Brighton & Hove Albion,Premier League,Defender,Defenders,334,7,Defensive full-back,1.1249,-0.6595,0.2005,41.2,39.5,48.0,44.3,81.8,83.8,32.1,47.3,88.5,9.5,6.8,10.8,12.8,2.0
+115365,Lewis Dunk,Brighton & Hove Albion,Premier League,Defender,Defenders,360,2,Stopper centre-back,2.5281,-1.6293,0.2426,95.9,39.5,20.3,29.7,22.3,7.1,32.1,44.3,87.8,20.9,5.1,38.2,56.4,90.5
+1405212,Luka Vušković,Brighton & Hove Albion,Premier League,Defender,Defenders,438,2,Stopper centre-back,2.8232,-2.0097,0.3059,91.2,39.5,83.1,17.2,95.3,7.1,32.1,36.8,66.2,39.9,25.0,44.6,87.2,91.2
+997152,Maxim De Cuyper,Brighton & Hove Albion,Premier League,Defender,Defenders,425,6,Creative forward,-2.786,1.7316,0.1694,92.6,98.6,98.6,90.5,92.6,100.0,98.6,61.5,92.6,54.7,10.1,57.4,3.4,2.0
+788784,Olivier Boscagli,Brighton & Hove Albion,Premier League,Defender,Defenders,437,0,Progressive wing-back,1.4629,1.2058,0.2599,41.2,39.5,31.1,85.1,56.1,90.5,95.9,13.5,93.2,41.2,76.4,46.6,47.3,56.1
+48480,Pascal Groß,Brighton & Hove Albion,Premier League,Midfielder,Midfielders,450,6,Creative forward,-4.7878,1.6817,0.1417,96.1,98.2,94.7,78.1,77.6,96.5,93.0,6.1,79.8,47.8,46.5,2.2,38.6,57.9
+1036269,Yasin Ayari,Brighton & Hove Albion,Premier League,Midfielder,Midfielders,334,3,Ball-winning midfielder,-1.1089,-0.1637,0.2139,88.6,32.0,75.4,28.9,86.8,34.2,24.6,63.2,41.2,4.4,33.3,45.6,18.4,21.9
+982780,Cole Palmer,Chelsea,Premier League,Midfielder,Midfielders,443,6,Creative forward,-5.4873,1.7133,0.1785,91.2,91.2,89.5,71.9,95.6,81.6,94.7,89.5,69.3,10.5,11.0,40.4,7.9,16.7
+975079,João Pedro,Chelsea,Premier League,Forward,Defenders,360,5,Clinical finisher,-3.0988,-3.369,0.143,100.0,100.0,100.0,52.7,100.0,97.3,87.5,98.6,55.7,8.1,1.0,2.0,0.7,95.6
+996911,Levi Colwill,Chelsea,Premier League,Defender,Defenders,342,2,Stopper centre-back,3.4785,-0.6956,0.4557,41.2,39.5,13.5,20.9,25.7,31.8,32.1,46.6,37.2,34.8,52.0,61.1,63.5,77.7
+879674,Maxence Lacroix,Chelsea,Premier League,Defender,Defenders,371,2,Stopper centre-back,3.268,-0.7513,0.2309,41.2,91.9,52.7,58.1,39.9,27.0,84.5,13.5,5.4,74.3,78.4,6.1,86.5,85.8
+948261,Morgan Rogers,Chelsea,Premier League,Midfielder,Midfielders,439,6,Creative forward,-5.0245,0.7562,0.1782,97.4,73.2,93.9,89.5,93.9,83.3,76.3,90.4,63.2,11.4,3.5,62.3,23.7,91.2
+879349,Pedro Neto,Chelsea,Premier League,Midfielder,Attackers,336,1,Wide dribbler,-2.3574,0.1886,0.2621,50.0,30.2,34.9,72.1,30.2,60.5,70.9,79.1,82.6,86.0,93.0,77.9,61.6,38.4
+923894,Wesley Fofana,Chelsea,Premier League,Defender,Defenders,315,2,Stopper centre-back,4.6194,0.3045,0.2095,41.2,39.5,5.4,34.5,5.4,61.8,32.1,50.3,77.7,73.6,100.0,34.5,95.9,81.1
+999276,Aurèle Amenda,Coventry City,Premier League,Defender,Defenders,360,2,Stopper centre-back,2.9638,-1.5799,0.3121,41.2,39.5,15.9,81.1,22.3,28.7,32.1,44.3,36.5,8.1,33.4,22.6,56.4,95.6
+1033352,Bobby Thomas,Coventry City,Premier League,Defender,Defenders,438,2,Stopper centre-back,2.8066,-1.4671,0.2757,41.2,39.5,86.5,61.5,98.0,66.9,80.4,36.8,23.0,16.9,75.7,39.2,91.9,87.8
+885864,Frank Onyeka,Coventry City,Premier League,Midfielder,Midfielders,316,3,Ball-winning midfielder,2.2829,0.6146,0.2323,33.8,32.0,7.9,0.9,13.2,1.8,24.6,6.1,2.6,16.7,86.0,42.1,41.2,61.4
+979565,Jack Rudoni,Coventry City,Premier League,Midfielder,Midfielders,301,4,Creative playmaker,-1.6831,2.1592,0.1684,33.8,32.0,90.4,97.4,72.8,91.2,24.6,27.2,26.3,20.2,57.0,90.4,56.1,98.2
+791985,Jay DaSilva,Coventry City,Premier League,Defender,Defenders,445,0,Progressive wing-back,0.736,-0.2022,0.2802,89.9,39.5,87.2,85.8,54.1,75.0,79.7,95.9,70.3,39.2,37.5,29.4,16.9,24.3
+340713,Matt Grimes,Coventry City,Premier League,Midfielder,Midfielders,444,3,Ball-winning midfielder,1.0852,0.3411,0.2877,33.8,32.0,21.1,16.7,34.2,20.2,24.6,6.1,43.0,35.1,27.6,21.9,70.2,82.5
+948723,Milan van Ewijk,Coventry City,Premier League,Defender,Defenders,360,7,Defensive full-back,2.7918,0.2089,0.3987,41.2,39.5,5.4,69.6,5.4,70.9,32.1,44.3,59.5,50.7,62.2,38.2,42.2,31.8
+1109771,Adam Wharton,Crystal Palace,Premier League,Midfielder,Midfielders,437,4,Creative playmaker,-0.0854,2.0649,0.24,33.8,32.0,29.8,56.1,37.7,59.6,78.1,16.7,44.7,55.3,73.7,19.3,76.3,17.5
+1403362,Anan Khalaili,Crystal Palace,Premier League,Midfielder,Midfielders,380,3,Ball-winning midfielder,0.6973,2.1542,0.1978,85.5,32.0,84.2,41.2,67.5,30.7,24.6,83.3,21.1,100.0,79.8,89.5,95.6,81.6
+931844,Chris Richards,Crystal Palace,Premier League,Defender,Defenders,450,2,Stopper centre-back,4.0213,-0.6312,0.3429,41.2,39.5,32.4,16.2,33.8,7.1,32.1,58.4,17.6,64.5,69.9,36.5,88.5,41.9
+794338,Daichi Kamada,Crystal Palace,Premier League,Midfielder,Midfielders,443,4,Creative playmaker,-1.4686,2.951,0.1971,33.8,99.1,57.9,43.9,35.1,50.0,75.4,34.2,47.4,86.0,11.0,59.6,22.8,32.5
+1471671,Jaydee Canvot,Crystal Palace,Premier League,Defender,Defenders,360,7,Defensive full-back,3.6017,-0.1236,0.3501,41.2,39.5,27.7,44.3,22.3,28.7,32.1,13.5,51.0,76.0,81.4,22.6,56.4,45.3
+876599,Jørgen Strand Larsen,Crystal Palace,Premier League,Forward,Attackers,301,5,Clinical finisher,-0.763,-3.674,0.2569,57.0,30.2,18.6,38.4,25.6,20.9,18.6,26.7,11.6,51.2,16.3,15.1,82.6,86.0
+988275,Tyrick Mitchell,Crystal Palace,Premier League,Midfielder,Defenders,421,7,Defensive full-back,0.6195,-0.1069,0.2246,99.3,39.5,93.9,58.8,80.4,83.1,81.8,62.2,57.4,75.0,10.8,87.2,22.3,16.9
+984624,Yéremy Pino,Crystal Palace,Premier League,Forward,Attackers,311,1,Wide dribbler,-2.6128,0.3536,0.2004,15.1,30.2,24.4,74.4,24.4,65.1,96.5,24.4,58.1,70.9,58.1,94.2,67.4,43.0
+1627560,Harrison Armstrong,Everton,Premier League,Midfielder,Midfielders,446,4,Creative playmaker,-0.4575,1.9896,0.2805,33.8,71.1,37.7,52.6,32.5,33.3,74.6,33.3,29.8,50.4,47.4,37.7,57.9,31.6
+927361,James Garner,Everton,Premier League,Midfielder,Midfielders,330,3,Ball-winning midfielder,0.8928,3.2401,0.2279,33.8,32.0,46.5,23.7,36.0,47.4,24.6,6.1,60.5,96.5,50.0,93.9,59.6,5.7
+145188,James Tarkowski,Everton,Premier League,Defender,Defenders,450,2,Stopper centre-back,3.422,0.0382,0.178,87.8,85.1,52.0,4.4,66.6,40.9,76.7,13.5,45.9,85.1,99.3,49.7,66.2,99.0
+979563,Jarrad Branthwaite,Everton,Premier League,Defender,Defenders,450,2,Stopper centre-back,4.1161,-1.655,0.44,41.2,39.5,47.3,4.4,52.0,7.1,32.1,13.5,9.5,25.0,69.9,26.4,83.4,82.1
+861970,Kiernan Dewsbury-Hall,Everton,Premier League,Midfielder,Midfielders,448,4,Creative playmaker,-3.2075,1.865,0.2224,77.6,32.0,77.2,75.4,96.5,78.9,54.4,79.8,80.7,33.3,9.6,75.4,21.9,15.8
+1395746,Thierno Barry,Everton,Premier League,Forward,Attackers,419,5,Clinical finisher,-2.5789,-4.9727,0.2691,68.0,30.2,89.5,22.1,89.5,45.3,18.6,47.7,14.0,22.1,65.1,33.7,51.2,94.2
+1403061,Tyrique George,Everton,Premier League,Forward,Attackers,312,1,Wide dribbler,-3.236,-0.7577,0.227,54.7,30.2,15.1,50.0,69.8,88.4,74.4,89.5,65.1,30.2,80.2,72.1,43.0,41.9
+876643,Vitaliy Mykolenko,Everton,Premier League,Defender,Defenders,450,7,Defensive full-back,3.415,1.4076,0.2578,41.2,39.5,21.3,38.5,17.2,40.9,32.1,58.4,62.2,94.9,69.9,95.9,29.1,74.0
+352770,Alex Iwobi,Fulham,Premier League,Midfielder,Attackers,411,6,Creative forward,-3.207,1.8355,0.1932,15.1,30.2,10.5,88.4,11.6,91.9,93.0,9.3,95.3,73.3,76.7,84.9,34.9,6.4
+803174,Antonee Robinson,Fulham,Premier League,Defender,Defenders,431,7,Defensive full-back,1.5038,1.3369,0.2632,41.2,39.5,66.2,65.5,70.3,91.9,32.1,82.4,84.5,91.9,25.7,68.9,27.7,10.1
+861972,Calvin Bassey,Fulham,Premier League,Defender,Defenders,450,7,Defensive full-back,2.4936,-0.0938,0.3059,41.2,39.5,42.6,26.0,52.0,7.1,32.1,80.7,74.3,25.0,36.1,77.0,45.3,9.1
+1402716,Gonzalo García,Fulham,Premier League,Forward,Attackers,427,5,Clinical finisher,-2.3897,-4.0677,0.3075,41.9,30.2,74.4,65.1,79.1,24.4,54.1,46.5,26.7,20.9,44.8,22.1,77.9,93.0
+1546231,Josh King,Fulham,Premier League,Midfielder,Attackers,427,1,Wide dribbler,-3.081,-1.9305,0.2758,65.1,30.2,54.7,53.5,72.1,36.0,54.1,70.9,64.0,68.6,44.8,68.6,50.0,18.6
+1065216,Oscar Bobb,Fulham,Premier League,Midfielder,Attackers,348,1,Wide dribbler,-2.457,0.8604,0.1903,15.1,30.2,23.3,93.0,5.8,89.5,69.8,36.0,69.8,26.7,91.9,81.4,7.0,24.4
+793167,Sander Berge,Fulham,Premier League,Midfielder,Midfielders,352,4,Creative playmaker,-0.2751,0.6792,0.2035,33.8,32.0,19.3,50.9,22.8,63.2,66.7,6.1,32.5,14.9,17.5,3.5,48.2,41.2
+1131449,Shea Charles,Fulham,Premier League,Midfielder,Midfielders,304,3,Ball-winning midfielder,1.4588,2.8111,0.2186,33.8,32.0,24.6,28.1,24.6,39.5,24.6,68.4,67.5,42.1,98.2,83.3,75.4,65.8
+329417,Timothy Castagne,Fulham,Premier League,Defender,Defenders,410,0,Progressive wing-back,1.4859,0.2798,0.2914,41.2,89.2,93.2,74.3,72.3,78.4,32.1,39.9,52.0,58.8,42.6,62.2,43.9,17.6
+100578,John Egan,Hull City,Premier League,Defender,Defenders,438,2,Stopper centre-back,4.3403,-1.8425,0.3493,41.2,39.5,25.0,1.4,55.4,7.1,32.1,13.5,2.7,27.7,61.5,16.2,96.6,64.9
+827587,Lewie Coyle,Hull City,Premier League,Defender,Defenders,351,7,Defensive full-back,2.3612,-0.7467,0.2781,41.2,39.5,49.3,19.9,24.3,56.1,32.1,13.5,42.6,33.8,18.2,28.4,6.8,12.8
+1125839,Mohamed Belloumi,Hull City,Premier League,Midfielder,Attackers,398,1,Wide dribbler,-2.5665,0.059,0.15,70.9,84.9,29.1,56.4,70.9,50.6,59.3,65.1,43.0,96.5,100.0,59.3,54.1,31.4
+367228,Oli McBurnie,Hull City,Premier League,Forward,Attackers,442,5,Clinical finisher,-1.0026,-3.5407,0.1885,15.1,65.1,50.0,18.6,33.7,55.8,18.6,41.9,22.1,19.8,43.0,20.9,95.3,98.8
+864474,Regan Slater,Hull City,Premier League,Midfielder,Midfielders,438,4,Creative playmaker,-0.675,1.6603,0.2685,33.8,74.6,40.4,58.8,36.8,50.9,77.2,54.4,14.0,54.4,50.9,18.4,50.0,83.3
+931304,Ryan Giles,Hull City,Premier League,Defender,Defenders,445,0,Progressive wing-back,0.6196,0.5956,0.2277,41.2,88.5,14.2,77.7,18.9,95.3,97.3,60.8,24.3,26.4,37.5,29.4,37.8,33.8
+307274,Semi Ajayi,Hull City,Premier League,Defender,Defenders,424,2,Stopper centre-back,2.6369,-1.6249,0.3191,93.2,39.5,91.2,2.7,57.4,7.1,32.1,75.0,16.2,28.4,52.7,42.6,44.6,58.1
+1103589,Abdul Fatawu Issahaku,Ipswich Town,Premier League,Midfielder,Midfielders,357,4,Creative playmaker,-2.7926,3.4039,0.1499,33.8,81.1,38.6,93.9,48.2,75.4,99.1,99.1,4.4,77.2,75.4,10.5,36.4,54.4
+856719,Dara O'Shea,Ipswich Town,Premier League,Defender,Defenders,450,2,Stopper centre-back,3.3175,-0.9789,0.3243,41.2,39.5,30.4,56.8,17.2,86.1,32.1,58.4,12.2,14.9,59.8,49.7,83.4,89.2
+1128844,Emersonn,Ipswich Town,Premier League,Forward,Attackers,321,5,Clinical finisher,-3.7058,-3.5901,0.2103,74.4,76.7,66.3,20.9,53.5,47.7,89.0,44.8,2.3,67.4,16.3,5.8,66.3,70.9
+825719,Issa Diop,Ipswich Town,Premier League,Defender,Defenders,450,7,Defensive full-back,3.8667,0.0663,0.2483,41.2,39.5,26.7,42.9,17.2,40.9,32.1,58.4,8.8,36.8,97.6,71.3,62.8,50.0
+990821,Jacob Greaves,Ipswich Town,Premier League,Defender,Defenders,358,2,Stopper centre-back,3.3299,-1.1932,0.3713,41.2,39.5,5.4,18.9,5.4,30.4,32.1,13.5,25.7,32.4,17.6,32.4,64.9,61.5
+973556,Julio Enciso,Ipswich Town,Premier League,Midfielder,Midfielders,415,4,Creative playmaker,-3.8042,2.1061,0.1796,33.8,93.9,91.2,84.2,97.4,55.3,82.0,87.7,31.6,13.2,38.6,74.6,15.8,19.3
+963493,Leif Davis,Ipswich Town,Premier League,Defender,Defenders,450,0,Progressive wing-back,-0.0091,-1.9668,0.1816,98.6,85.1,97.3,79.4,84.5,73.0,76.7,13.5,37.8,4.7,23.3,8.1,36.5,15.5
+371222,Saša Lukić,Ipswich Town,Premier League,Midfielder,Midfielders,403,3,Ball-winning midfielder,0.551,1.8206,0.245,33.8,77.6,4.4,50.0,7.0,57.0,24.6,19.3,34.2,43.4,78.9,14.9,79.8,35.1
+889861,Anton Stach,Leeds United,Premier League,Midfielder,Midfielders,448,3,Ball-winning midfielder,1.1647,0.8567,0.2317,77.6,32.0,76.3,37.7,60.5,49.1,24.6,32.5,15.8,66.7,93.0,49.1,91.2,99.1
+372344,Dominic Calvert-Lewin,Leeds United,Premier League,Forward,Attackers,421,5,Clinical finisher,-1.5891,-6.0846,0.2028,81.4,30.2,86.0,5.2,45.3,3.5,18.6,8.1,7.0,7.6,16.3,47.7,97.7,100.0
+847097,Ethan Ampadu,Leeds United,Premier League,Midfielder,Midfielders,450,3,Ball-winning midfielder,2.0333,2.0224,0.2433,33.8,32.0,16.7,30.7,16.7,44.3,24.6,14.5,5.3,65.4,92.1,65.8,78.9,57.9
+827681,James Justin,Leeds United,Premier League,Defender,Defenders,450,7,Defensive full-back,2.4563,0.364,0.2484,41.2,85.1,58.1,73.6,66.6,73.0,76.7,13.5,18.9,85.1,86.5,26.4,49.0,74.0
+929132,Jayden Bogle,Leeds United,Premier League,Midfielder,Defenders,369,7,Defensive full-back,1.3002,-1.9997,0.2351,95.3,39.5,96.6,28.4,87.2,48.6,32.1,76.4,14.2,48.0,14.5,19.6,14.9,43.2
+282229,Nico Elvedi,Leeds United,Premier League,Defender,Defenders,326,2,Stopper centre-back,1.7246,-0.4388,0.1973,41.2,39.5,48.6,96.6,46.6,59.5,96.6,13.5,49.3,10.1,54.7,12.8,72.3,56.8
+865523,Noah Okafor,Leeds United,Premier League,Forward,Attackers,303,1,Wide dribbler,-1.3904,-1.1543,0.1776,55.8,30.2,5.8,46.5,16.3,19.8,18.6,97.7,25.6,98.8,59.3,34.9,45.3,52.3
+1118177,Tarik Muharemović,Leeds United,Premier League,Defender,Defenders,450,2,Stopper centre-back,3.4487,-1.0012,0.215,41.2,85.1,84.5,10.1,77.4,23.3,76.7,73.6,10.8,14.9,97.6,36.5,93.2,89.2
+823941,Alexander Isak,Liverpool FC,Premier League,Forward,Attackers,415,5,Clinical finisher,-3.2578,-5.5102,0.2239,89.5,30.2,90.7,8.1,82.6,25.6,18.6,48.8,45.3,7.6,48.8,2.3,19.8,55.8
+895324,Alexis Mac Allister,Liverpool FC,Premier League,Midfielder,Midfielders,308,3,Ball-winning midfielder,0.4149,2.9581,0.2527,33.8,32.0,28.1,66.7,42.1,38.6,24.6,52.6,78.1,94.7,35.1,79.8,86.0,64.0
+862967,Cody Gakpo,Liverpool FC,Premier League,Midfielder,Attackers,371,6,Creative forward,-4.2239,2.05,0.1816,46.5,97.7,25.6,98.8,47.7,95.3,65.1,69.8,79.1,95.3,94.2,73.3,39.5,54.7
+869856,Dominik Szoboszlai,Liverpool FC,Premier League,Midfielder,Midfielders,441,4,Creative playmaker,-2.7948,1.8711,0.2324,79.8,32.0,92.1,71.1,84.2,82.5,88.6,35.1,70.2,36.0,49.1,55.3,58.8,48.2
+1019322,Florian Wirtz,Liverpool FC,Premier League,Midfielder,Midfielders,403,4,Creative playmaker,-2.4347,2.0304,0.2274,33.8,77.6,83.3,49.1,86.0,73.7,24.6,81.6,78.9,43.4,3.5,82.5,29.4,68.4
+1445625,Jérémy Jacquet,Liverpool FC,Premier League,Defender,Defenders,417,7,Defensive full-back,3.0706,1.0764,0.297,41.2,39.5,5.4,39.5,5.4,69.6,32.1,75.7,89.2,69.6,91.2,81.1,33.1,73.0
+1097425,Miloš Kerkez,Liverpool FC,Premier League,Defender,Defenders,386,7,Defensive full-back,2.4398,-0.7258,0.2837,41.2,39.5,33.1,27.0,61.5,48.0,32.1,41.2,83.1,45.3,12.8,14.2,54.1,28.4
+151545,Virgil van Dijk,Liverpool FC,Premier League,Defender,Defenders,450,2,Stopper centre-back,3.876,-0.608,0.3147,41.2,39.5,62.8,26.0,33.8,23.3,32.1,13.5,87.2,36.8,69.9,49.7,90.2,86.8
+934354,Antoine Semenyo,Manchester City,Premier League,Midfielder,Attackers,450,6,Creative forward,-4.3559,0.3781,0.2287,61.0,91.9,8.1,83.7,15.1,86.6,77.3,39.0,81.4,64.5,39.0,49.4,17.4,29.1
+994546,Elliot Anderson,Manchester City,Premier League,Midfielder,Midfielders,415,3,Ball-winning midfielder,0.1361,3.5742,0.2104,33.8,32.0,20.2,67.5,39.5,26.3,82.0,65.8,89.5,78.9,88.6,70.2,83.3,76.3
+839956,Erling Haaland,Manchester City,Premier League,Forward,Attackers,450,5,Clinical finisher,-3.4819,-5.2996,0.2336,94.8,30.2,95.3,60.5,94.2,2.3,48.8,39.0,16.3,7.6,39.0,26.7,96.5,67.4
+914309,Iliman Ndiaye,Manchester City,Premier League,Midfielder,Attackers,387,6,Creative forward,-2.9462,1.8818,0.2318,15.1,70.9,11.6,69.8,18.6,73.3,83.7,87.2,87.2,60.5,83.7,100.0,90.7,32.6
+964994,Joško Gvardiol,Manchester City,Premier League,Defender,Defenders,435,0,Progressive wing-back,0.5478,1.1274,0.2181,91.9,98.0,60.8,93.9,56.8,67.9,81.1,87.2,73.6,53.4,77.7,75.7,20.9,77.0
+877994,Marc Guéhi,Manchester City,Premier League,Defender,Defenders,450,0,Progressive wing-back,0.7328,-0.2265,0.239,87.8,85.1,95.6,72.0,52.0,64.2,76.7,80.7,95.9,25.0,23.3,56.8,60.8,82.1
+979128,Rayan Cherki,Manchester City,Premier League,Midfielder,Midfielders,305,6,Creative forward,-6.8158,2.131,0.1425,100.0,97.4,80.7,99.1,85.1,98.2,96.5,84.2,87.7,1.3,19.3,9.6,20.2,5.7
+318941,Rúben Dias,Manchester City,Premier League,Defender,Defenders,450,2,Stopper centre-back,2.1924,-1.1359,0.2698,41.2,39.5,67.6,92.6,33.8,64.2,32.1,58.4,54.7,4.7,23.3,36.5,56.4,86.8
+288205,Bruno Fernandes,Manchester United,Premier League,Midfielder,Midfielders,450,6,Creative forward,-5.572,1.3728,0.1442,96.1,70.2,98.2,90.8,98.2,89.0,53.5,31.6,98.2,32.5,3.5,48.2,14.0,14.9
+927083,Bryan Mbeumo,Manchester United,Premier League,Forward,Attackers,450,5,Clinical finisher,-4.4992,-1.6664,0.1786,61.0,30.2,82.6,73.3,91.9,86.6,77.3,27.9,89.5,64.5,77.9,49.4,31.4,50.0
+843200,Diogo Dalot,Manchester United,Premier League,Defender,Defenders,348,0,Progressive wing-back,0.422,1.7563,0.2446,41.2,39.5,73.6,62.8,98.6,99.3,88.5,78.4,86.5,68.9,64.2,91.9,2.0,34.5
+149380,Harry Maguire,Manchester United,Premier League,Defender,Defenders,450,2,Stopper centre-back,2.1674,-0.4748,0.274,41.2,39.5,56.8,79.4,84.5,64.2,76.7,73.6,65.2,14.9,59.8,71.3,56.4,92.2
+1142175,Kobbie Mainoo,Manchester United,Premier League,Midfielder,Midfielders,357,4,Creative playmaker,-1.6171,4.6997,0.1694,33.8,81.1,51.8,63.2,63.2,61.4,24.6,98.2,93.0,49.1,81.6,100.0,36.4,38.6
+859999,Lisandro Martínez,Manchester United,Premier League,Defender,Defenders,360,2,Stopper centre-back,2.1994,-0.9995,0.2939,41.2,39.5,64.9,49.7,93.2,28.7,32.1,44.3,72.3,31.8,16.2,45.6,42.2,68.9
+190839,Luke Shaw,Manchester United,Premier League,Defender,Defenders,336,0,Progressive wing-back,0.9102,1.3003,0.235,41.2,93.2,21.3,93.2,45.3,89.2,89.9,13.5,91.9,56.8,88.5,5.4,17.6,55.4
+814590,Marcus Rashford,Manchester United,Premier League,Forward,Attackers,355,1,Wide dribbler,-3.5866,-0.8504,0.1769,15.1,30.2,38.4,61.6,86.0,97.7,18.6,84.9,88.4,25.6,53.5,39.5,60.5,48.8
+886363,Matheus Cunha,Manchester United,Premier League,Forward,Attackers,410,6,Creative forward,-4.4273,-0.4963,0.2418,43.0,68.6,22.1,77.9,68.6,77.9,94.2,31.4,77.9,40.7,50.0,25.6,7.0,6.4
+331737,Youri Tielemans,Manchester United,Premier League,Midfielder,Midfielders,404,4,Creative playmaker,-0.5135,3.3707,0.1943,33.8,32.0,66.7,55.3,64.9,64.9,24.6,40.4,99.1,58.8,82.5,81.6,28.1,67.1
+1102791,Amar Dedić,Newcastle United,Premier League,Defender,Defenders,328,7,Defensive full-back,1.5387,-0.3283,0.223,41.2,93.9,54.7,36.5,69.6,58.8,32.1,87.8,16.9,40.5,7.4,67.6,48.0,38.5
+855647,Harvey Barnes,Newcastle United,Premier League,Forward,Attackers,449,1,Wide dribbler,-2.1275,-0.9222,0.2183,37.2,83.7,17.4,54.7,17.4,54.7,50.0,17.4,52.3,37.2,72.1,61.6,100.0,51.2
+1136730,Lewis Hall,Newcastle United,Premier League,Defender,Defenders,449,0,Progressive wing-back,0.145,2.9782,0.2055,89.2,87.2,64.2,95.9,79.1,87.2,95.3,95.3,85.8,86.5,50.0,100.0,58.8,33.1
+1400650,Lewis Miley,Newcastle United,Premier League,Midfielder,Midfielders,399,3,Ball-winning midfielder,1.3919,2.0276,0.324,33.8,32.0,11.0,18.9,8.3,40.4,24.6,57.0,45.6,44.7,66.7,86.8,90.4,79.8
+1014286,Malick Thiaw,Newcastle United,Premier League,Defender,Defenders,450,2,Stopper centre-back,3.7493,-2.7414,0.2629,41.2,39.5,5.4,22.6,5.4,23.3,32.1,58.4,6.8,1.4,8.8,8.1,90.2,96.6
+910046,Sven Botman,Newcastle United,Premier League,Defender,Defenders,450,2,Stopper centre-back,4.3537,-2.1578,0.3333,41.2,39.5,26.7,47.3,33.8,7.1,32.1,13.5,4.4,14.9,48.3,26.4,98.6,92.2
+805123,Yoane Wissa,Newcastle United,Premier League,Forward,Attackers,441,5,Clinical finisher,-2.2833,-3.3424,0.2758,39.5,66.3,68.6,1.2,27.9,33.7,51.2,43.0,8.1,7.6,16.3,54.7,76.7,74.4
+944327,Dan Ndoye,Nottingham Forest,Premier League,Midfielder,Attackers,321,6,Creative forward,-4.122,-1.4628,0.1918,51.2,30.2,60.5,87.2,77.9,62.8,89.0,44.8,24.4,7.6,55.8,87.2,40.7,39.5
+1170722,Jair,Nottingham Forest,Premier League,Defender,Midfielders,360,2,Stopper centre-back,2.4422,-0.8268,0.2062,33.8,32.0,13.2,1.8,21.1,12.3,24.6,6.1,7.0,14.0,43.0,2.2,100.0,93.0
+1003334,James McAtee,Nottingham Forest,Premier League,Midfielder,Midfielders,418,4,Creative playmaker,-1.9004,2.9938,0.2106,33.8,32.0,52.6,86.8,74.6,86.8,79.8,38.2,66.7,89.5,12.3,57.0,71.9,85.1
+865912,Morgan Gibbs-White,Nottingham Forest,Premier League,Midfielder,Midfielders,450,6,Creative forward,-5.2778,2.1162,0.1753,76.3,89.5,93.0,94.7,77.6,93.0,97.8,72.8,71.9,2.6,8.8,11.4,7.0,45.6
+1199282,Murillo,Nottingham Forest,Premier League,Defender,Defenders,448,7,Defensive full-back,2.444,0.3955,0.2515,41.2,87.8,79.7,68.2,79.7,82.4,32.1,81.8,66.9,72.6,73.0,51.4,91.2,62.8
+927356,Neco Williams,Nottingham Forest,Premier League,Defender,Defenders,450,0,Progressive wing-back,0.9045,1.3583,0.2104,41.2,39.5,78.4,87.2,84.5,94.6,76.7,34.8,60.1,94.9,1.0,93.2,23.0,41.9
+800417,Ola Aina,Nottingham Forest,Premier League,Defender,Defenders,309,7,Defensive full-back,1.5971,0.5996,0.2953,41.2,39.5,25.7,98.6,50.0,85.1,32.1,91.9,30.4,62.8,41.2,66.2,29.7,39.2
+791079,Xaver Schlager,Nottingham Forest,Premier League,Midfielder,Midfielders,376,3,Ball-winning midfielder,1.2729,2.4078,0.2419,33.8,32.0,39.5,26.3,62.3,9.6,24.6,70.2,38.6,98.2,70.2,71.1,57.0,71.9
+910048,Brian Brobbey,Sunderland,Premier League,Forward,Attackers,401,5,Clinical finisher,-3.192,-5.0303,0.2649,83.7,30.2,84.9,12.8,51.2,48.8,58.1,20.9,29.1,7.6,16.3,32.6,23.3,84.9
+958878,Daniel Ballard,Sunderland,Premier League,Defender,Defenders,450,2,Stopper centre-back,3.6483,-2.4515,0.2683,41.2,39.5,73.0,42.9,77.4,40.9,32.1,34.8,10.1,36.8,36.1,15.5,83.4,100.0
+984014,Enzo Le Fée,Sunderland,Premier League,Midfielder,Midfielders,439,6,Creative forward,-3.9529,1.3313,0.1802,80.7,73.2,96.5,93.0,78.9,67.5,95.6,80.7,27.2,53.5,36.0,4.4,1.8,49.1
+117777,Granit Xhaka,Sunderland,Premier League,Midfielder,Midfielders,450,4,Creative playmaker,-1.9146,4.9881,0.1733,33.8,32.0,12.3,90.8,3.5,89.0,97.8,61.4,76.3,65.4,71.1,93.0,21.1,73.7
+1116571,Nilson Angulo,Sunderland,Premier League,Midfielder,Attackers,318,1,Wide dribbler,-2.1167,-0.4889,0.2345,52.9,77.9,31.4,25.6,8.1,16.9,73.3,82.6,59.3,47.7,88.4,82.6,7.0,40.7
+1171539,Noah Sadiki,Sunderland,Premier League,Midfielder,Midfielders,412,3,Ball-winning midfielder,-0.0377,0.7979,0.2936,33.8,32.0,56.1,31.6,64.0,27.2,58.8,67.5,51.3,57.0,39.5,7.9,67.5,52.6
+780014,Nordi Mukiele,Sunderland,Premier League,Defender,Defenders,360,7,Defensive full-back,2.9208,0.2315,0.2361,41.2,39.5,95.6,66.9,88.5,52.4,87.5,66.2,31.1,95.9,81.4,64.2,85.1,75.3
+831424,Reinildo Mandava,Sunderland,Premier League,Defender,Defenders,360,7,Defensive full-back,3.3693,0.5941,0.2803,41.2,39.5,5.4,72.0,5.4,52.4,32.1,66.2,51.0,50.7,93.9,80.4,36.5,75.3
+128587,Thomas Meunier,Sunderland,Premier League,Defender,Defenders,399,0,Progressive wing-back,0.7813,-0.2196,0.246,41.2,90.5,77.0,88.9,94.6,45.9,83.1,40.5,44.6,6.8,43.9,41.9,31.1,20.3
+262911,Andy Robertson,Tottenham Hotspur,Premier League,Defender,Defenders,367,0,Progressive wing-back,-0.5782,2.2529,0.2098,41.2,92.6,46.6,83.8,40.5,98.0,100.0,42.2,94.6,48.6,31.8,53.4,19.6,11.5
+1142335,Archie Gray,Tottenham Hotspur,Premier League,Midfielder,Midfielders,310,3,Ball-winning midfielder,1.0824,0.8556,0.277,33.8,32.0,50.0,4.8,41.2,1.8,24.6,66.7,68.4,18.4,68.4,28.9,72.8,43.0
+962012,Jan Paul van Hecke,Tottenham Hotspur,Premier League,Defender,Defenders,450,0,Progressive wing-back,1.3538,-0.3665,0.2373,87.8,39.5,90.5,76.4,77.4,81.8,76.7,13.5,93.9,50.7,23.3,43.6,70.9,78.7
+998247,Micky van de Ven,Tottenham Hotspur,Premier League,Defender,Defenders,360,2,Stopper centre-back,3.2397,-0.9011,0.3419,41.2,39.5,92.6,14.2,62.8,7.1,32.1,13.5,55.7,66.6,33.4,73.0,69.6,80.4
+873554,Omar Marmoush,Tottenham Hotspur,Premier League,Forward,Attackers,341,1,Wide dribbler,-2.106,-1.1891,0.2048,15.1,30.2,16.3,26.7,29.1,44.2,18.6,94.2,60.5,45.3,16.3,52.3,7.0,6.4
+791190,Rodrigo Bentancur,Tottenham Hotspur,Premier League,Midfielder,Midfielders,372,3,Ball-winning midfielder,2.2552,2.2641,0.2676,33.8,32.0,5.3,17.5,10.5,11.4,24.6,21.5,71.1,88.6,72.8,80.7,94.7,96.5
+892673,Sandro Tonali,Tottenham Hotspur,Premier League,Midfielder,Midfielders,429,4,Creative playmaker,-0.6011,1.9679,0.2738,33.8,32.0,44.7,59.6,69.3,36.0,57.0,36.8,83.3,21.9,52.6,47.4,50.9,33.3
