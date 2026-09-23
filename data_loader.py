@@ -156,7 +156,13 @@ def build(refresh: bool = False, offline: bool = False, verbose: bool = True) ->
     now = current_season()
     for start in seasons():
         # the finished season is cached for good, the live one is refetched
-        df = per_90(fetch_season(start, refresh=(refresh or start == now) and not offline))
+        try:
+            raw = fetch_season(start, refresh=(refresh or start == now) and not offline)
+        except RuntimeError as err:
+            # Sofascore sometimes needs a breather, last week's cache will do
+            print(f"couldn't refetch {label(start)} ({err}), using the cached numbers")
+            raw = fetch_season(start, refresh=False)
+        df = per_90(raw)
         path = PROCESSED / f"players_{start}.csv"
         df.to_csv(path, index=False)
         out[label(start)] = df
