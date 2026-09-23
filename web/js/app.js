@@ -47,7 +47,7 @@ const pool = () => players().filter((p) => inLeague(p) && p.min >= state.minMinu
 const seasonMeta = () => meta.seasons.find((s) => s.key === state.season);
 
 function normalise(text) {
-  return text.normalize("NFKD").replace(/[̀-ͯ]/g, "").replace(/ø/gi, "o").toLowerCase();
+  return text.normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/ø/gi, "o").toLowerCase();
 }
 
 // percentile of each stat, measured against every player in the target's
