@@ -16,3 +16,6 @@ Thumbs.db
 
 # written by refresh.py
 refresh.log
+
+# rebuilt by similarity_engine.py, pickles aren't byte-for-byte stable
+models/
