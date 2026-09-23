@@ -86,6 +86,33 @@ def silhouettes(x: np.ndarray) -> dict[int, float]:
     return scores
 
 
+def plot_choosing_k(x: np.ndarray) -> None:
+    """Elbow and silhouette for K from 2 to 10, the chart I looked at
+    before settling on eight."""
+    import matplotlib
+
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    ks = range(2, 11)
+    inertia, sil = [], []
+    for k in ks:
+        km = KMeans(n_clusters=k, n_init=20, random_state=SEED).fit(x)
+        inertia.append(km.inertia_)
+        sil.append(silhouette_score(x, km.labels_, random_state=SEED))
+    fig, (a, b) = plt.subplots(1, 2, figsize=(10, 3.6))
+    a.plot(list(ks), inertia, marker="o", color="#2350b8")
+    a.set(title="Inertia (the elbow)", xlabel="K")
+    b.plot(list(ks), sil, marker="o", color="#d9480f")
+    b.set(title="Silhouette", xlabel="K")
+    for ax in (a, b):
+        ax.axvline(K, color="grey", lw=1, ls=":")
+        ax.grid(alpha=0.3)
+    fig.tight_layout()
+    fig.savefig(REPORTS / "choosing_k.png", dpi=110)
+    plt.close(fig)
+
+
 def name_clusters(centroids: np.ndarray, main_role: list[str]) -> list[str]:
     """Give every cluster a different template name, maximising the total
     fit. A template for the wrong role can still win, but it has to fit a
@@ -135,6 +162,7 @@ def run(verbose: bool = True) -> dict:
     x = cluster_space(z, base["role"])
 
     scores = silhouettes(x)
+    plot_choosing_k(x)
     kmeans = KMeans(n_clusters=K, n_init=50, random_state=SEED).fit(x)
     main_role = [base.loc[kmeans.labels_ == c, "role"].value_counts().idxmax() for c in range(K)]
     names = name_clusters(kmeans.cluster_centers_, main_role)

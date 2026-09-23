@@ -30,7 +30,11 @@ Two of those are stand-ins. Progressive carries and shot creating actions aren't
 
 **Similarity.** `StandardScaler` over the per 90s (fitted on 2025/26, with z-scores clipped at 3.5 so a freak number from a short spell can't dominate), then cosine similarity. By default a player is only compared with their own position group, because a winger's tackle count and a centre-back's tackle count mean different things.
 
-**Archetypes.** K-Means with K=8. Straight K-Means on the style numbers kept lumping full-backs in with holding midfielders (they both tackle a lot), so the position group is appended as a weighted one-hot before clustering. Silhouette scores for K from 5 to 8 were 0.24, 0.23, 0.23 and 0.20, which is pretty flat, so eight was my call: at eight the extra groups are real roles (progressive wing-backs, creative forwards) rather than noise. Names come from matching each cluster centre against hand-written templates, not from me eyeballing them:
+**Archetypes.** K-Means with K=8. Straight K-Means on the style numbers kept lumping full-backs in with holding midfielders (they both tackle a lot), so the position group is appended as a weighted one-hot before clustering. Silhouette scores for K from 5 to 8 were 0.24, 0.23, 0.23 and 0.20, which is pretty flat, so eight was my call: at eight the extra groups are real roles (progressive wing-backs, creative forwards) rather than noise. Over a wider range the silhouette actually peaks at three, but three clusters is just attackers, midfielders and defenders again, which isn't telling anyone anything.
+
+![Inertia and silhouette for K from 2 to 10](reports/choosing_k.png)
+
+Names come from matching each cluster centre against hand-written templates, not from me eyeballing them:
 
 | Archetype | Size | Closest to the middle of the group (900+ minutes) |
 |---|---|---|
