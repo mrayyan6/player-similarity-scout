@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Style Twins</title>
+  <meta name="description" content="Find Premier League and La Liga players with the same playing style, from per 90 numbers, cosine similarity and K-Means archetypes.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>
+    try {
+      const saved = localStorage.getItem("theme");
+      if (saved === "light" || saved === "dark") document.documentElement.dataset.theme = saved;
+    } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Chivo+Mono:wght@400;500&family=Chivo:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="top-inner">
+      <div>
+        <h1 class="title">Style Twins</h1>
+        <p class="tagline">Who plays like who, in the Premier League and La Liga. Per 90 numbers, compared like for like.</p>
+      </div>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch colour theme">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path class="sun" d="M12 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zM12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/><path class="moon" d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="page">
+    <aside class="filters" aria-label="Filters">
+      <div class="filter">
+        <span class="filter-label" id="season-label">Season</span>
+        <div class="pills" role="radiogroup" aria-labelledby="season-label" id="season-pills"></div>
+      </div>
+      <div class="filter">
+        <span class="filter-label" id="league-label">League</span>
+        <div class="pills" role="radiogroup" aria-labelledby="league-label" id="league-pills">
+          <button type="button" role="radio" data-value="Premier League">Premier League</button>
+          <button type="button" role="radio" data-value="La Liga">La Liga</button>
+          <button type="button" role="radio" data-value="cross">Both</button>
+        </div>
+      </div>
+      <div class="filter">
+        <label class="filter-label" for="role-select">Compare against</label>
+        <select id="role-select">
+          <option value="same">Same position group</option>
+          <option value="Attackers">Attackers</option>
+          <option value="Midfielders">Midfielders</option>
+          <option value="Defenders">Defenders</option>
+          <option value="any">Anyone</option>
+        </select>
+      </div>
+      <div class="filter">
+        <label class="filter-label" for="minutes">Minimum minutes <output id="minutes-out"></output></label>
+        <input type="range" id="minutes" min="300" step="30">
+      </div>
+      <p class="filter-note" id="pool-note"></p>
+    </aside>
+
+    <main>
+      <nav class="tabs" role="tablist" aria-label="Sections">
+        <button type="button" role="tab" id="tab-twins" aria-controls="panel-twins" aria-selected="true">Find a twin</button>
+        <button type="button" role="tab" id="tab-map" aria-controls="panel-map" aria-selected="false" tabindex="-1">Map of styles</button>
+      </nav>
+
+      <section id="panel-twins" class="panel" role="tabpanel" aria-labelledby="tab-twins">
+        <div class="search" id="search">
+          <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5l5 5"/></svg>
+          <input id="search-input" type="search" autocomplete="off" spellcheck="false" placeholder="Search a player or a club" role="combobox" aria-expanded="false" aria-controls="search-list" aria-autocomplete="list">
+          <ul id="search-list" class="search-list" role="listbox" hidden></ul>
+        </div>
+        <div class="quick" id="quick"></div>
+
+        <div class="twins-grid">
+          <div class="left-col">
+            <article class="target" id="target"></article>
+            <section class="matches-card">
+              <h2 class="card-title">Closest matches</h2>
+              <ol class="matches" id="matches"></ol>
+              <p class="small-note" id="matches-note"></p>
+            </section>
+          </div>
+          <section class="radar-card" aria-labelledby="radar-title">
+            <div class="radar-head">
+              <h2 class="card-title" id="radar-title">Side by side</h2>
+              <div class="radar-legend" id="radar-legend"></div>
+            </div>
+            <div class="radar" id="radar"></div>
+            <p class="small-note">Percentiles within the target's position group, so 90 on dribbles means more dribbles per 90 than nine in ten players in that group.</p>
+            <table class="compare" id="compare"></table>
+          </section>
+        </div>
+      </section>
+
+      <section id="panel-map" class="panel" role="tabpanel" aria-labelledby="tab-map" hidden>
+        <p class="map-lede" id="map-lede"></p>
+        <div class="legend-chips" id="legend-chips"></div>
+        <div class="map-wrap">
+          <div class="map" id="map"></div>
+          <div class="map-tools">
+            <button type="button" id="zoom-in" aria-label="Zoom in">+</button>
+            <button type="button" id="zoom-out" aria-label="Zoom out">&minus;</button>
+            <button type="button" id="zoom-reset">Reset</button>
+          </div>
+        </div>
+        <p class="small-note">Scroll or pinch to zoom, drag to move around, click a dot to look that player up. Distances are squashed from fourteen numbers down to two, so neighbours on the map are usually similar, but the twin search is the better judge.</p>
+
+        <h2 class="section-title">The eight archetypes</h2>
+        <div class="archetypes" id="archetypes"></div>
+        <p class="small-note" id="k-note"></p>
+      </section>
+    </main>
+  </div>
+
+  <footer class="foot">
+    <p>Stats from <a href="https://www.sofascore.com" rel="noopener">Sofascore</a>, positions from <a href="https://github.com/dcaribou/transfermarkt-datasets" rel="noopener">transfermarkt-datasets</a>. <a href="https://github.com/mrayyan6/player-similarity-scout" rel="noopener">Source on GitHub</a>.</p>
+    <p id="foot-note"></p>
+  </footer>
+
+  <div class="tooltip" id="tooltip" hidden></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
