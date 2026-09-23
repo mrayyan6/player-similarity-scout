@@ -1,0 +1,293 @@
+{
+ "exported": "2026-09-23",
+ "minMinutes": 300,
+ "seasons": [
+  {
+   "key": "2025",
+   "label": "2025/26",
+   "full": true,
+   "players": 815,
+   "maxMinutes": 3420
+  },
+  {
+   "key": "2026",
+   "label": "2026/27",
+   "full": false,
+   "players": 348,
+   "maxMinutes": 630
+  }
+ ],
+ "features": [
+  {
+   "key": "goals",
+   "label": "Goals",
+   "short": "Goals",
+   "group": "Shooting",
+   "note": null
+  },
+  {
+   "key": "xg",
+   "label": "xG",
+   "short": "xG",
+   "group": "Shooting",
+   "note": null
+  },
+  {
+   "key": "shots",
+   "label": "Shots",
+   "short": "Shots",
+   "group": "Shooting",
+   "note": null
+  },
+  {
+   "key": "assists",
+   "label": "Assists",
+   "short": "Assists",
+   "group": "Creating",
+   "note": null
+  },
+  {
+   "key": "xa",
+   "label": "xA",
+   "short": "xA",
+   "group": "Creating",
+   "note": null
+  },
+  {
+   "key": "key_passes",
+   "label": "Key passes",
+   "short": "Key passes",
+   "group": "Creating",
+   "note": null
+  },
+  {
+   "key": "big_chances_created",
+   "label": "Big chances created",
+   "short": "Big chances",
+   "group": "Creating",
+   "note": "Stands in for shot creating actions, same reason."
+  },
+  {
+   "key": "dribbles",
+   "label": "Dribbles completed",
+   "short": "Dribbles",
+   "group": "Carrying the ball",
+   "note": null
+  },
+  {
+   "key": "final_third_passes",
+   "label": "Final third passes",
+   "short": "Final 3rd passes",
+   "group": "Carrying the ball",
+   "note": "Stands in for progressive carries, which no free source has since FBref lost its Opta data."
+  },
+  {
+   "key": "tackles_won",
+   "label": "Tackles won",
+   "short": "Tackles",
+   "group": "Winning it back",
+   "note": null
+  },
+  {
+   "key": "interceptions",
+   "label": "Interceptions",
+   "short": "Interceptions",
+   "group": "Winning it back",
+   "note": null
+  },
+  {
+   "key": "recoveries",
+   "label": "Ball recoveries",
+   "short": "Recoveries",
+   "group": "Winning it back",
+   "note": null
+  },
+  {
+   "key": "clearances",
+   "label": "Clearances",
+   "short": "Clearances",
+   "group": "Defending the box",
+   "note": null
+  },
+  {
+   "key": "aerials_won",
+   "label": "Aerials won",
+   "short": "Aerials",
+   "group": "Defending the box",
+   "note": null
+  }
+ ],
+ "groups": [
+  "Shooting",
+  "Creating",
+  "Carrying the ball",
+  "Winning it back",
+  "Defending the box"
+ ],
+ "archetypes": [
+  {
+   "id": 0,
+   "name": "Progressive wing-back",
+   "size": 74,
+   "examples": [
+    "Neco Williams",
+    "Carlos Romero",
+    "Jeremy Toljan",
+    "Matty Cash",
+    "Matheus Nunes",
+    "Andrei Rațiu"
+   ],
+   "roles": {
+    "Defenders": 74
+   },
+   "about": "Well above average for xA, big chances created and final third passes, below average for xG and shots."
+  },
+  {
+   "id": 1,
+   "name": "Wide dribbler",
+   "size": 116,
+   "examples": [
+    "Jarrod Bowen",
+    "Antoine Semenyo",
+    "Germán Valera",
+    "Iliman Ndiaye",
+    "Cody Gakpo",
+    "Jaidon Anthony"
+   ],
+   "roles": {
+    "Attackers": 116
+   },
+   "about": "Well above average for dribbles completed, shots and xG, below average for clearances and interceptions."
+  },
+  {
+   "id": 2,
+   "name": "Stopper centre-back",
+   "size": 134,
+   "examples": [
+    "Virgil van Dijk",
+    "Nikola Milenković",
+    "James Tarkowski",
+    "Leandro Cabrera",
+    "Martin Valjent",
+    "Marcos Senesi"
+   ],
+   "roles": {
+    "Defenders": 131,
+    "Attackers": 2,
+    "Midfielders": 1
+   },
+   "about": "Well above average for clearances, aerials won and interceptions, below average for key passes and final third passes."
+  },
+  {
+   "id": 3,
+   "name": "Ball-winning midfielder",
+   "size": 138,
+   "examples": [
+    "Mauro Arambarri",
+    "Aleix Febas",
+    "Ethan Ampadu",
+    "Antonio Blanco",
+    "Mateus Fernandes",
+    "Martín Zubimendi"
+   ],
+   "roles": {
+    "Midfielders": 137,
+    "Attackers": 1
+   },
+   "about": "Well above average for tackles won, ball recoveries and interceptions, below average for big chances created and xA."
+  },
+  {
+   "id": 4,
+   "name": "Creative playmaker",
+   "size": 97,
+   "examples": [
+    "James Garner",
+    "Elliot Anderson",
+    "Morgan Rogers",
+    "Luis Milla",
+    "Dominik Szoboszlai",
+    "Enzo Fernández"
+   ],
+   "roles": {
+    "Midfielders": 97
+   },
+   "about": "Well above average for final third passes, key passes and xA, below average for clearances and aerials won."
+  },
+  {
+   "id": 5,
+   "name": "Clinical finisher",
+   "size": 87,
+   "examples": [
+    "Igor Thiago",
+    "Vedat Muriqi",
+    "Erling Haaland",
+    "Ante Budimir",
+    "Ollie Watkins",
+    "Evanilson"
+   ],
+   "roles": {
+    "Attackers": 83,
+    "Midfielders": 3,
+    "Defenders": 1
+   },
+   "about": "Well above average for xG, goals and shots, below average for ball recoveries and interceptions."
+  },
+  {
+   "id": 6,
+   "name": "Creative forward",
+   "size": 58,
+   "examples": [
+    "Bruno Fernandes",
+    "Vinícius Júnior",
+    "Pedro Neto",
+    "Kylian Mbappé",
+    "Antony",
+    "Yankuba Minteh"
+   ],
+   "roles": {
+    "Attackers": 53,
+    "Midfielders": 5
+   },
+   "about": "Well above average for xA, key passes and big chances created, below average for clearances and aerials won."
+  },
+  {
+   "id": 7,
+   "name": "Defensive full-back",
+   "size": 111,
+   "examples": [
+    "Adrien Truffert",
+    "Michael Kayode",
+    "Tyrick Mitchell",
+    "Luke Shaw",
+    "Juan Iglesias",
+    "Ferdi Kadıoğlu"
+   ],
+   "roles": {
+    "Defenders": 111
+   },
+   "about": "Well above average for tackles won, interceptions and clearances, below average for shots and xG."
+  }
+ ],
+ "k": 8,
+ "silhouette": {
+  "5": 0.2373,
+  "6": 0.2326,
+  "7": 0.226,
+  "8": 0.2008
+ },
+ "fittedOn": "2025/26",
+ "pca": {
+  "explained": [
+   0.3763,
+   0.2168
+  ],
+  "x": [
+   "more shots and key passes",
+   "more clearances and interceptions"
+  ],
+  "y": [
+   "more xG and aerials won",
+   "more ball recoveries and final third passes"
+  ]
+ }
+}
