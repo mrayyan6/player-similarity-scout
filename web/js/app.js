@@ -10,22 +10,26 @@ const el = (tag, cls, text) => {
   return n;
 };
 
-// Big names to start from, for whichever league is picked: full name as
-// Sofascore spells it -> what goes on the button. The first one is who the
-// page opens on. The last couple are spares for when someone hasn't played
-// enough yet this season.
+// Big names playing in each league in 2026/27, best known first: full name
+// as Sofascore spells it -> what goes on the button. The first one is who the
+// page opens on. Ten are shown; anyone short of 300 minutes in the season on
+// screen is skipped and the next one moves up. Needs a look after every
+// transfer window (summer 2026: Salah, Lewandowski and Griezmann gone,
+// Konaté, Cucurella, Rodri and Gordon into La Liga, Rashford back).
 const QUICK = {
   "Premier League": {
     "Erling Haaland": "Haaland",
     "Virgil van Dijk": "Van Dijk",
-    "Mohamed Salah": "Salah",
     "Cole Palmer": "Palmer",
     "Bruno Fernandes": "Bruno Fernandes",
     "Declan Rice": "Rice",
+    "Marcus Rashford": "Rashford",
     "Florian Wirtz": "Wirtz",
+    "Alexander Isak": "Isak",
     "Martin Ødegaard": "Ødegaard",
     "Phil Foden": "Foden",
-    "Alexander Isak": "Isak",
+    "Dominik Szoboszlai": "Szoboszlai",
+    "Enzo Fernández": "Enzo Fernández",
   },
   "La Liga": {
     "Lamine Yamal": "Yamal",
@@ -34,10 +38,16 @@ const QUICK = {
     "Vinícius Júnior": "Vinícius",
     "Raphinha": "Raphinha",
     "Pedri": "Pedri",
-    "Robert Lewandowski": "Lewandowski",
-    "Antoine Griezmann": "Griezmann",
+    "Ibrahima Konaté": "Konaté",
+    "Rodri": "Rodri",
+    "Marc Cucurella": "Cucurella",
+    "Yan Diomande": "Diomande",
+    "Anthony Gordon": "Gordon",
+    "Bernardo Silva": "Bernardo Silva",
     "Federico Valverde": "Valverde",
     "Nico Williams": "Nico Williams",
+    "Arda Güler": "Güler",
+    "Julián Alvarez": "Julián Álvarez",
   },
   cross: {
     "Lamine Yamal": "Yamal",
@@ -47,12 +57,14 @@ const QUICK = {
     "Jude Bellingham": "Bellingham",
     "Vinícius Júnior": "Vinícius",
     "Raphinha": "Raphinha",
-    "Mohamed Salah": "Salah",
     "Cole Palmer": "Palmer",
     "Pedri": "Pedri",
+    "Ibrahima Konaté": "Konaté",
+    "Rodri": "Rodri",
+    "Bruno Fernandes": "Bruno Fernandes",
   },
 };
-const QUICK_SHOWN = 8;
+const QUICK_SHOWN = 10;
 
 const state = { season: null, league: "Premier League", role: "same", minMinutes: 300, target: null, match: 0 };
 let meta;
