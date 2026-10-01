@@ -83,8 +83,7 @@ function scoutNote(p) {
   const top = ranked.slice(0, 2).filter((r) => r.v >= 70);
   const worst = ranked.at(-1);
   const role = p.role.toLowerCase();
-  // lower case for the sentence, except xG and xA
-  const low = (f) => (f.key === "xg" || f.key === "xa" ? f.label : f.label.toLowerCase());
+  const low = (f) => f.label.toLowerCase();
   const pieces = top.map((r) => `top ${Math.max(1, Math.round(100 - r.v))}% of ${role} for ${low(r.f)}`);
   let note = pieces.length ? pieces.join(", ") : `nothing extreme, a bit of everything for a ${role.slice(0, -1)}`;
   if (worst && worst.v < 25) note += `. Not much in the way of ${low(worst.f)}`;
@@ -114,7 +113,7 @@ function renderFilters() {
   slider.value = String(state.minMinutes);
   $("#minutes-out").textContent = state.minMinutes.toLocaleString("en-GB");
   const n = pool().length;
-  $("#pool-note").textContent = `${n} players in the pool. ${seasonMeta().full ? "Full season." : "Season in progress, so small samples: treat these with care."}`;
+  $("#pool-note").textContent = `${n} players to compare. ${seasonMeta().full ? "Full season." : "Season still going, so these are based on a few games each."}`;
 }
 
 function renderQuick() {
@@ -148,12 +147,16 @@ function renderTarget() {
   const dot = el("i");
   dot.style.background = `var(--c${p.c})`;
   badge.append(dot, arche.name);
-  card.append(
-    who,
-    el("p", "meta", `${p.team} · ${p.league} · ${p.pos ?? p.role} · ${p.min.toLocaleString("en-GB")} min in ${p.apps} games`),
-    badge,
-    el("p", "scout-note", scoutNote(p))
-  );
+  card.append(who, el("p", "meta", `${p.team} · ${p.league} · ${p.pos ?? p.role} · ${p.min.toLocaleString("en-GB")} min in ${p.apps} games`));
+
+  // the answer first: who they play most like
+  const best = matches()[0];
+  if (best) {
+    const twin = el("p", "twin");
+    twin.append("Plays most like ", el("b", null, best.player.name), " ", el("span", "twin-pct", `${Math.max(0, Math.round(best.sim * 100))}% match`));
+    card.appendChild(twin);
+  }
+  card.append(badge, el("p", "scout-note", scoutNote(p)));
 }
 
 function renderMatches() {
@@ -193,7 +196,7 @@ function renderMatches() {
   });
   const where = state.league === "cross" ? "both leagues" : state.league;
   const who = state.role === "same" ? state.target.role.toLowerCase() : state.role === "any" ? "any position" : state.role.toLowerCase();
-  $("#matches-note").textContent = `Cosine similarity on fourteen per 90 numbers, against ${who} in ${where} with ${state.minMinutes}+ minutes. Hover to preview, click to compare.`;
+  $("#matches-note").textContent = `Compared with ${who} in ${where}. Same style doesn't always mean the same level. Hover to preview, click to compare.`;
   renderRadar(found[state.match].player);
 }
 
@@ -205,7 +208,7 @@ function renderRadar(match) {
   const mp = match ? percentilesAgainst(group, match) : null;
   const sides = [{ name: t.name, color: "var(--pen)", p90: t.p90, pct: tp }];
   if (match) sides.push({ name: match.name, color: "var(--marker)", p90: match.p90, pct: mp });
-  radar.update(tp, mp, { sides, label: match ? `${t.name} against ${match.name}` : t.name });
+  radar.update(tp, mp, { sides, label: match ? `${t.name} against ${match.name}` : t.name, group: t.role.toLowerCase() });
 
   const legend = $("#radar-legend");
   legend.replaceChildren();
@@ -216,14 +219,14 @@ function renderRadar(match) {
     item.append(key, s.name);
     legend.appendChild(item);
   }
-  renderCompare(t, match, tp, mp);
+  renderCompare(t, match);
 }
 
-function renderCompare(t, m, tp, mp) {
+function renderCompare(t, m) {
   const table = $("#compare");
   table.replaceChildren();
   const head = el("tr");
-  head.append(el("th", null, "Per 90"), el("th", null, t.name.split(" ").at(-1)), el("th", null, m ? m.name.split(" ").at(-1) : ""));
+  head.append(el("th", null, "Per 90 min"), el("th", null, t.name.split(" ").at(-1)), el("th", null, m ? m.name.split(" ").at(-1) : ""));
   const thead = el("thead");
   thead.appendChild(head);
   const body = el("tbody");
@@ -248,10 +251,8 @@ function renderCompare(t, m, tp, mp) {
       name.textContent = f.label;
     }
     const a = el("td", "num", t.p90[i].toFixed(2));
-    a.appendChild(el("small", null, `${Math.round(tp[i])}`));
     const b = el("td", "num", m ? m.p90[i].toFixed(2) : "");
     if (m) {
-      b.appendChild(el("small", null, `${Math.round(mp[i])}`));
       if (t.p90[i] > m.p90[i]) a.classList.add("ahead", "t");
       else if (m.p90[i] > t.p90[i]) b.classList.add("ahead", "m");
     }
@@ -287,10 +288,6 @@ function renderMap() {
     });
     chips.appendChild(b);
   });
-
-  $("#map-lede").textContent = `Every player squashed from fourteen numbers down to two with PCA (it keeps ${Math.round(
-    (meta.pca.explained[0] + meta.pca.explained[1]) * 100
-  )}% of the variation), coloured by K-Means archetype. Click a colour below to hide or show it.`;
 }
 
 function renderArchetypes() {
@@ -300,14 +297,13 @@ function renderArchetypes() {
     const card = el("article", "archetype");
     card.style.setProperty("--swatch", `var(--c${a.id})`);
     const members = players().filter((p) => p.c === a.id && inLeague(p));
-    const plural = (n, word) => `${n} ${n === 1 ? word.toLowerCase().replace(/s$/, "") : word.toLowerCase()}`;
-    const roles = Object.entries(a.roles).sort((x, y) => y[1] - x[1]).map(([r, n]) => plural(n, r)).join(", ");
     card.append(
       el("h3", null, a.name),
-      el("span", "count", `${members.length} in this view. In ${meta.fittedOn}: ${roles}.`),
+      el("span", "count", `${members.length} ${members.length === 1 ? "player" : "players"}`),
       el("p", null, a.about)
     );
     const ex = el("div", "examples");
+    ex.appendChild(el("span", "examples-label", "Typical:"));
     // purest examples: closest to the centre of the cluster, with real minutes
     const best = members.filter((p) => p.min >= 900).sort((x, y) => y.fit - x.fit).slice(0, 4);
     for (const p of best) {
@@ -323,8 +319,21 @@ function renderArchetypes() {
     card.appendChild(ex);
     wrap.appendChild(card);
   }
+}
+
+// the technical side, for whoever opens the nerd section
+function renderNerd() {
+  const kept = Math.round((meta.pca.explained[0] + meta.pca.explained[1]) * 100);
+  $("#nerd-map").textContent = `PCA squashes the fourteen numbers down to two and keeps ${kept}% of the variation, so neighbours on the map are usually similar, but the twin search is the better judge. Left to right runs from ${meta.pca.x[0]} to ${meta.pca.x[1]}, bottom to top from ${meta.pca.y[0]} to ${meta.pca.y[1]}.`;
   const sil = Object.entries(meta.silhouette).map(([k, v]) => `K=${k}: ${v.toFixed(2)}`).join(", ");
-  $("#k-note").textContent = `Eight groups, fitted on ${meta.fittedOn} and applied to this season too. Silhouette scores (${sil}) are fairly flat, so the choice of eight is a judgement call: at eight the extra groups are real roles, like wing-backs and creative forwards, rather than noise.`;
+  $("#nerd-k").textContent = `K-Means with K=${meta.k} on the scaled numbers plus the position group as a weighted one-hot, so full-backs don't get lumped in with holding midfielders. Fitted on ${meta.fittedOn} and applied to this season too. Silhouette scores (${sil}) are fairly flat, so ${meta.k} is a judgement call: the extra groups are real roles rather than noise. Each group is named by matching its centre against hand-written templates. What the centres look like:`;
+  $("#nerd-styles").replaceChildren(
+    ...meta.archetypes.map((a) => {
+      const li = el("li");
+      li.append(el("b", null, `${a.name}: `), a.stats);
+      return li;
+    })
+  );
 }
 
 function renderAll() {
@@ -334,6 +343,7 @@ function renderAll() {
   renderMatches();
   renderMap();
   renderArchetypes();
+  renderNerd();
   writeHash();
 }
 
@@ -519,7 +529,7 @@ async function init() {
   const fromHash = players().find((p) => String(p.id) === id && inLeague(p));
   if (fromHash) state.target = fromHash;
   ensureTarget();
-  $("#foot-note").textContent = `Numbers last rebuilt ${new Date(`${meta.exported}T12:00:00`).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })}.`;
+  $("#foot-note").textContent = `Last updated ${new Date(`${meta.exported}T12:00:00`).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })}.`;
   renderAll();
 }
 

@@ -94,7 +94,7 @@ export function createRadar(container, features) {
       if (!info) return;
       const rows = [{ text: f.label }];
       for (const side of info.sides) {
-        rows.push({ swatch: side.color, text: `${side.name}: ${side.p90[i].toFixed(2)} per 90, ${Math.round(side.pct[i])}th percentile` });
+        rows.push({ swatch: side.color, text: `${side.name}: ${side.p90[i].toFixed(2)} per 90 min, better than ${Math.round(side.pct[i])}% of ${info.group}` });
       }
       if (f.note) rows.push({ text: f.note });
       tip(e, rows);

@@ -38,29 +38,50 @@ GROUPS = [
     ("Winning it back", ["tackles_won", "interceptions", "recoveries"]),
     ("Defending the box", ["clearances", "aerials_won"]),
 ]
+# plain names on the site: xG and xA mean nothing to most people
 LABELS = {
-    "goals": "Goals", "xg": "xG", "shots": "Shots",
-    "assists": "Assists", "xa": "xA", "key_passes": "Key passes", "big_chances_created": "Big chances created",
+    "goals": "Goals", "xg": "Expected goals", "shots": "Shots",
+    "assists": "Assists", "xa": "Expected assists", "key_passes": "Key passes", "big_chances_created": "Big chances created",
     "dribbles": "Dribbles completed", "final_third_passes": "Final third passes",
     "tackles_won": "Tackles won", "interceptions": "Interceptions", "recoveries": "Ball recoveries",
-    "clearances": "Clearances", "aerials_won": "Aerials won",
+    "clearances": "Clearances", "aerials_won": "Headers won",
 }
 SHORT = {
-    "goals": "Goals", "xg": "xG", "shots": "Shots", "assists": "Assists", "xa": "xA",
+    "goals": "Goals", "xg": "Expected goals", "shots": "Shots", "assists": "Assists", "xa": "Expected assists",
     "key_passes": "Key passes", "big_chances_created": "Big chances", "dribbles": "Dribbles",
     "final_third_passes": "Final 3rd passes", "tackles_won": "Tackles", "interceptions": "Interceptions",
-    "recoveries": "Recoveries", "clearances": "Clearances", "aerials_won": "Aerials",
+    "recoveries": "Recoveries", "clearances": "Clearances", "aerials_won": "Headers",
 }
+# one line for the stats that need explaining, shown when you hover the name
 NOTES = {
-    "final_third_passes": "Stands in for progressive carries, which no free source has since FBref lost its Opta data.",
-    "big_chances_created": "Stands in for shot creating actions, same reason.",
+    "xg": "How many goals their shots would usually produce, going by where and how they were taken.",
+    "xa": "How many assists their passes would usually produce, going by the chances they set up.",
+    "key_passes": "Passes that led straight to a shot.",
+    "big_chances_created": "Passes that set up a clear chance to score.",
+    "final_third_passes": "Passes completed in the attacking third of the pitch.",
+    "recoveries": "Times they picked up a loose ball.",
+    "aerials_won": "Duels in the air they won, mostly headers.",
+}
+# what each style means in football words, one per template in
+# similarity_engine.TEMPLATES (the generated stat summary goes to the nerds)
+PLAIN = {
+    "Clinical finisher": "Lives in the box. Takes lots of shots and scores goals.",
+    "Creative forward": "An attacker who sets others up: key passes, big chances and assists.",
+    "Wide dribbler": "Takes defenders on, usually from out wide, and gets shots away.",
+    "Target forward": "A focal point up front who wins headers and scores.",
+    "Ball-winning midfielder": "Breaks up play and wins the ball back: tackles, interceptions, recoveries.",
+    "Creative playmaker": "Runs the game from midfield and feeds the ball into the final third.",
+    "Box-to-box runner": "Does a bit of everything: wins the ball, gets forward, has a shot.",
+    "Stopper centre-back": "Defending first: headers, clearances and interceptions.",
+    "Ball-playing centre-back": "A centre-back who also gets the ball forward with passes.",
+    "Progressive wing-back": "A full-back who bombs on: creates chances and gets the ball into the final third.",
+    "Defensive full-back": "A full-back who stays home: tackles, interceptions and clearances.",
 }
 ORDER = [f for _, fs in GROUPS for f in fs]
 
 
 def low(f: str) -> str:
-    # lower case for running text, but xG and xA stay as they are
-    return LABELS[f] if f in ("xg", "xa") else LABELS[f].lower()
+    return LABELS[f].lower()
 
 
 def describe(centroid: dict[str, float]) -> str:
@@ -139,7 +160,7 @@ def main() -> None:
         "groups": [g for g, _ in GROUPS],
         "archetypes": [
             {"id": a["id"], "name": a["name"], "size": a["size"], "examples": a["examples"],
-             "roles": a["roles"], "about": describe(a["centroid"])}
+             "roles": a["roles"], "about": PLAIN[a["name"]], "stats": describe(a["centroid"])}
             for a in summary["archetypes"]
         ],
         "k": summary["k"],
@@ -155,7 +176,7 @@ def main() -> None:
     sizes = {p.name: round(p.stat().st_size / 1024) for p in sorted(OUT.glob("*.json"))}
     print("exported:", ", ".join(f"{k} {v}KB" for k, v in sizes.items()))
     for a in meta["archetypes"]:
-        print(f"  {a['name']}: {a['about']}")
+        print(f"  {a['name']}: {a['stats']}")
     print("  map x:", " <-> ".join(meta["pca"]["x"]), "| y:", " <-> ".join(meta["pca"]["y"]))
 
 

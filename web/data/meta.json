@@ -1,5 +1,5 @@
 {
- "exported": "2026-09-23",
+ "exported": "2026-10-01",
  "minMinutes": 300,
  "seasons": [
   {
@@ -27,10 +27,10 @@
   },
   {
    "key": "xg",
-   "label": "xG",
-   "short": "xG",
+   "label": "Expected goals",
+   "short": "Expected goals",
    "group": "Shooting",
-   "note": null
+   "note": "How many goals their shots would usually produce, going by where and how they were taken."
   },
   {
    "key": "shots",
@@ -48,24 +48,24 @@
   },
   {
    "key": "xa",
-   "label": "xA",
-   "short": "xA",
+   "label": "Expected assists",
+   "short": "Expected assists",
    "group": "Creating",
-   "note": null
+   "note": "How many assists their passes would usually produce, going by the chances they set up."
   },
   {
    "key": "key_passes",
    "label": "Key passes",
    "short": "Key passes",
    "group": "Creating",
-   "note": null
+   "note": "Passes that led straight to a shot."
   },
   {
    "key": "big_chances_created",
    "label": "Big chances created",
    "short": "Big chances",
    "group": "Creating",
-   "note": "Stands in for shot creating actions, same reason."
+   "note": "Passes that set up a clear chance to score."
   },
   {
    "key": "dribbles",
@@ -79,7 +79,7 @@
    "label": "Final third passes",
    "short": "Final 3rd passes",
    "group": "Carrying the ball",
-   "note": "Stands in for progressive carries, which no free source has since FBref lost its Opta data."
+   "note": "Passes completed in the attacking third of the pitch."
   },
   {
    "key": "tackles_won",
@@ -100,7 +100,7 @@
    "label": "Ball recoveries",
    "short": "Recoveries",
    "group": "Winning it back",
-   "note": null
+   "note": "Times they picked up a loose ball."
   },
   {
    "key": "clearances",
@@ -111,10 +111,10 @@
   },
   {
    "key": "aerials_won",
-   "label": "Aerials won",
-   "short": "Aerials",
+   "label": "Headers won",
+   "short": "Headers",
    "group": "Defending the box",
-   "note": null
+   "note": "Duels in the air they won, mostly headers."
   }
  ],
  "groups": [
@@ -140,7 +140,8 @@
    "roles": {
     "Defenders": 74
    },
-   "about": "Well above average for xA, big chances created and final third passes, below average for xG and shots."
+   "about": "A full-back who bombs on: creates chances and gets the ball into the final third.",
+   "stats": "Well above average for expected assists, big chances created and final third passes, below average for expected goals and shots."
   },
   {
    "id": 1,
@@ -157,7 +158,8 @@
    "roles": {
     "Attackers": 116
    },
-   "about": "Well above average for dribbles completed, shots and xG, below average for clearances and interceptions."
+   "about": "Takes defenders on, usually from out wide, and gets shots away.",
+   "stats": "Well above average for dribbles completed, shots and expected goals, below average for clearances and interceptions."
   },
   {
    "id": 2,
@@ -176,7 +178,8 @@
     "Attackers": 2,
     "Midfielders": 1
    },
-   "about": "Well above average for clearances, aerials won and interceptions, below average for key passes and final third passes."
+   "about": "Defending first: headers, clearances and interceptions.",
+   "stats": "Well above average for clearances, headers won and interceptions, below average for key passes and final third passes."
   },
   {
    "id": 3,
@@ -194,7 +197,8 @@
     "Midfielders": 137,
     "Attackers": 1
    },
-   "about": "Well above average for tackles won, ball recoveries and interceptions, below average for big chances created and xA."
+   "about": "Breaks up play and wins the ball back: tackles, interceptions, recoveries.",
+   "stats": "Well above average for tackles won, ball recoveries and interceptions, below average for big chances created and expected assists."
   },
   {
    "id": 4,
@@ -211,7 +215,8 @@
    "roles": {
     "Midfielders": 97
    },
-   "about": "Well above average for final third passes, key passes and xA, below average for clearances and aerials won."
+   "about": "Runs the game from midfield and feeds the ball into the final third.",
+   "stats": "Well above average for final third passes, key passes and expected assists, below average for clearances and headers won."
   },
   {
    "id": 5,
@@ -230,7 +235,8 @@
     "Midfielders": 3,
     "Defenders": 1
    },
-   "about": "Well above average for xG, goals and shots, below average for ball recoveries and interceptions."
+   "about": "Lives in the box. Takes lots of shots and scores goals.",
+   "stats": "Well above average for expected goals, goals and shots, below average for ball recoveries and interceptions."
   },
   {
    "id": 6,
@@ -248,7 +254,8 @@
     "Attackers": 53,
     "Midfielders": 5
    },
-   "about": "Well above average for xA, key passes and big chances created, below average for clearances and aerials won."
+   "about": "An attacker who sets others up: key passes, big chances and assists.",
+   "stats": "Well above average for expected assists, key passes and big chances created, below average for clearances and headers won."
   },
   {
    "id": 7,
@@ -265,7 +272,8 @@
    "roles": {
     "Defenders": 111
    },
-   "about": "Well above average for tackles won, interceptions and clearances, below average for shots and xG."
+   "about": "A full-back who stays home: tackles, interceptions and clearances.",
+   "stats": "Well above average for tackles won, interceptions and clearances, below average for shots and expected goals."
   }
  ],
  "k": 8,
@@ -286,7 +294,7 @@
    "more clearances and interceptions"
   ],
   "y": [
-   "more xG and aerials won",
+   "more expected goals and headers won",
    "more ball recoveries and final third passes"
   ]
  }

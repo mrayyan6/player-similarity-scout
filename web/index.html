@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Style Twins</title>
-  <meta name="description" content="Find Premier League and La Liga players with the same playing style, from per 90 numbers, cosine similarity and K-Means archetypes.">
+  <meta name="description" content="Find Premier League and La Liga players who play like your favourite, and see every player on one map of playing styles.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <script>
     try {
@@ -22,7 +22,7 @@
     <div class="top-inner">
       <div>
         <h1 class="title">Style Twins</h1>
-        <p class="tagline">Who plays like who, in the Premier League and La Liga. Per 90 numbers, compared like for like.</p>
+        <p class="tagline">Find players who play like your favourite, in the Premier League and La Liga.</p>
       </div>
       <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch colour theme">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path class="sun" d="M12 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zM12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/><path class="moon" d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
@@ -45,9 +45,9 @@
         </div>
       </div>
       <div class="filter">
-        <label class="filter-label" for="role-select">Compare against</label>
+        <label class="filter-label" for="role-select">Compare with</label>
         <select id="role-select">
-          <option value="same">Same position group</option>
+          <option value="same">Same position</option>
           <option value="Attackers">Attackers</option>
           <option value="Midfielders">Midfielders</option>
           <option value="Defenders">Defenders</option>
@@ -55,7 +55,7 @@
         </select>
       </div>
       <div class="filter">
-        <label class="filter-label" for="minutes">Minimum minutes <output id="minutes-out"></output></label>
+        <label class="filter-label" for="minutes">Played at least <output id="minutes-out"></output></label>
         <input type="range" id="minutes" min="300" step="30">
       </div>
       <p class="filter-note" id="pool-note"></p>
@@ -68,6 +68,7 @@
       </nav>
 
       <section id="panel-twins" class="panel" role="tabpanel" aria-labelledby="tab-twins">
+        <label class="start-note" for="search-input">Start here: type any player <span aria-hidden="true">↓</span></label>
         <div class="search" id="search">
           <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5l5 5"/></svg>
           <input id="search-input" type="search" autocomplete="off" spellcheck="false" placeholder="Search a player or a club" role="combobox" aria-expanded="false" aria-controls="search-list" aria-autocomplete="list">
@@ -90,14 +91,14 @@
               <div class="radar-legend" id="radar-legend"></div>
             </div>
             <div class="radar" id="radar"></div>
-            <p class="small-note">Percentiles within the target's position group, so 90 on dribbles means more dribbles per 90 than nine in ten players in that group.</p>
+            <p class="small-note">The further out, the better they are at it compared with others in the same position. Hover a stat for the numbers.</p>
             <table class="compare" id="compare"></table>
           </section>
         </div>
       </section>
 
       <section id="panel-map" class="panel" role="tabpanel" aria-labelledby="tab-map" hidden>
-        <p class="map-lede" id="map-lede"></p>
+        <p class="map-lede">Players who play alike sit close together. Each colour is a playing style: click one to hide or show it.</p>
         <div class="legend-chips" id="legend-chips"></div>
         <div class="map-wrap">
           <div class="map" id="map"></div>
@@ -107,11 +108,26 @@
             <button type="button" id="zoom-reset">Reset</button>
           </div>
         </div>
-        <p class="small-note">Scroll or pinch to zoom, drag to move around, click a dot to look that player up. Distances are squashed from fourteen numbers down to two, so neighbours on the map are usually similar, but the twin search is the better judge.</p>
+        <p class="small-note">Scroll or pinch to zoom, drag to move around, click a dot to look that player up.</p>
 
-        <h2 class="section-title">The eight archetypes</h2>
+        <h2 class="section-title">The eight playing styles</h2>
         <div class="archetypes" id="archetypes"></div>
-        <p class="small-note" id="k-note"></p>
+
+        <details class="nerd" id="nerd">
+          <summary>For the stats nerds</summary>
+          <div class="nerd-body">
+            <h3>Finding twins</h3>
+            <p>Every player's season becomes fourteen per 90 numbers (300+ minutes). Those go through a <code>StandardScaler</code> fitted on 2025/26, with z-scores clipped at 3.5 so a freak number from a short spell can't dominate, and the match percentage is the cosine similarity between two players. Cosine compares the shape of a profile, not its size, which is why a twin can do the same things in the same proportions but less of all of them. By default a player is only compared with their own position group, because a winger's tackles and a centre-back's tackles mean different things.</p>
+            <h3>The map</h3>
+            <p id="nerd-map"></p>
+            <h3>The playing styles</h3>
+            <p id="nerd-k"></p>
+            <ul class="nerd-list" id="nerd-styles"></ul>
+            <h3>Two stand-ins</h3>
+            <p>Progressive carries and shot creating actions aren't in any free source any more (FBref lost its Opta data in January 2026), so final third passes and big chances created take their places.</p>
+            <p>Code and the full write-up are on <a href="https://github.com/mrayyan6/player-similarity-scout" rel="noopener">GitHub</a>.</p>
+          </div>
+        </details>
       </section>
     </main>
   </div>
