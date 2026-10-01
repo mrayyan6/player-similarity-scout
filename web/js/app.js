@@ -10,17 +10,49 @@ const el = (tag, cls, text) => {
   return n;
 };
 
-// full name as Sofascore spells it -> what goes on the button
+// Big names to start from, for whichever league is picked: full name as
+// Sofascore spells it -> what goes on the button. The first one is who the
+// page opens on. The last couple are spares for when someone hasn't played
+// enough yet this season.
 const QUICK = {
-  "Bukayo Saka": "Saka",
-  "Lamine Yamal": "Lamine Yamal",
-  "Vinícius Júnior": "Vinícius",
-  "Pedri": "Pedri",
-  "Cole Palmer": "Palmer",
-  "Martin Ødegaard": "Ødegaard",
-  "Declan Rice": "Rice",
-  "Virgil van Dijk": "Van Dijk",
+  "Premier League": {
+    "Erling Haaland": "Haaland",
+    "Virgil van Dijk": "Van Dijk",
+    "Mohamed Salah": "Salah",
+    "Cole Palmer": "Palmer",
+    "Bruno Fernandes": "Bruno Fernandes",
+    "Declan Rice": "Rice",
+    "Florian Wirtz": "Wirtz",
+    "Martin Ødegaard": "Ødegaard",
+    "Phil Foden": "Foden",
+    "Alexander Isak": "Isak",
+  },
+  "La Liga": {
+    "Lamine Yamal": "Yamal",
+    "Kylian Mbappé": "Mbappé",
+    "Jude Bellingham": "Bellingham",
+    "Vinícius Júnior": "Vinícius",
+    "Raphinha": "Raphinha",
+    "Pedri": "Pedri",
+    "Robert Lewandowski": "Lewandowski",
+    "Antoine Griezmann": "Griezmann",
+    "Federico Valverde": "Valverde",
+    "Nico Williams": "Nico Williams",
+  },
+  cross: {
+    "Lamine Yamal": "Yamal",
+    "Kylian Mbappé": "Mbappé",
+    "Erling Haaland": "Haaland",
+    "Virgil van Dijk": "Van Dijk",
+    "Jude Bellingham": "Bellingham",
+    "Vinícius Júnior": "Vinícius",
+    "Raphinha": "Raphinha",
+    "Mohamed Salah": "Salah",
+    "Cole Palmer": "Palmer",
+    "Pedri": "Pedri",
+  },
 };
+const QUICK_SHOWN = 8;
 
 const state = { season: null, league: "Premier League", role: "same", minMinutes: 300, target: null, match: 0 };
 let meta;
@@ -120,11 +152,7 @@ function renderFilters() {
 function renderQuick() {
   const wrap = $("#quick");
   wrap.replaceChildren(el("span", null, "Try:"));
-  const list = players();
-  for (const [name, short] of Object.entries(QUICK)) {
-    // any league: clicking someone from the other one switches over
-    const p = list.find((q) => q.name === name);
-    if (!p) continue;
+  for (const [p, short] of quickPicks()) {
     const b = el("button", null, short);
     b.type = "button";
     b.addEventListener("click", () => pickTarget(p));
@@ -369,8 +397,17 @@ function ensureTarget() {
     state.target = keep;
     return;
   }
-  const fromQuick = Object.keys(QUICK).map((n) => list.find((p) => p.name === n && inLeague(p))).find(Boolean);
-  state.target = fromQuick ?? pool().sort((a, b) => b.min - a.min)[0] ?? null;
+  const [big] = quickPicks()[0] ?? [];
+  state.target = big ?? pool().sort((a, b) => b.min - a.min)[0] ?? null;
+}
+
+// the big names for the league that are in this season's data, best first
+function quickPicks() {
+  const list = players();
+  return Object.entries(QUICK[state.league])
+    .map(([name, short]) => [list.find((p) => p.name === name && inLeague(p)), short])
+    .filter(([p]) => p)
+    .slice(0, QUICK_SHOWN);
 }
 
 async function setSeason(key) {
