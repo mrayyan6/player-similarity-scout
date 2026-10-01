@@ -13,6 +13,8 @@ Who plays like who? **Style Twins** finds Premier League and La Liga players wit
 3. Click a match to lay the two players over each other on the radar. The further out, the better they are at that thing.
 4. **Map of styles** shows every player at once, coloured by playing style. Click a dot to look that player up.
 
+It opens on the season being played, so the clubs are current. Pick 2025/26 on the left for a full season's worth of numbers.
+
 The maths is folded away under **For the stats nerds** at the bottom of the map tab. The rest of this README is the technical side.
 
 ## Some twins it found

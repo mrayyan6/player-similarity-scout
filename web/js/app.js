@@ -66,6 +66,10 @@ const QUICK = {
 };
 const QUICK_SHOWN = 10;
 
+// Open on the season being played once enough players have 300 minutes in
+// it. Early in August that's hardly anyone, so until then it's last season.
+const OPEN_ON_LIVE_FROM = 250;
+
 const state = { season: null, league: "Premier League", role: "same", minMinutes: 300, target: null, match: 0 };
 let meta;
 const seasons = {};
@@ -564,6 +568,12 @@ function wire() {
   });
 }
 
+function openingSeason() {
+  const live = meta.seasons.at(-1);
+  if (live.players >= OPEN_ON_LIVE_FROM) return live.key;
+  return (meta.seasons.findLast((s) => s.full) ?? meta.seasons[0]).key;
+}
+
 async function init() {
   meta = await json("data/meta.json");
   radar = createRadar($("#radar"), meta.features);
@@ -579,7 +589,7 @@ async function init() {
 
   const [season, leagueKey, id] = location.hash.slice(1).split("/");
   state.league = { epl: "Premier League", laliga: "La Liga", both: "cross" }[leagueKey] ?? "Premier League";
-  const key = meta.seasons.some((s) => s.key === season) ? season : meta.seasons[0].key;
+  const key = meta.seasons.some((s) => s.key === season) ? season : openingSeason();
   state.season = key;
   await loadSeason(key);
   const fromHash = players().find((p) => String(p.id) === id && inLeague(p));
