@@ -264,13 +264,16 @@ export function createMap(container, { onPick }) {
     if (opts?.axes) {
       const [xl, xr] = opts.axes.x;
       const [yb, yt] = opts.axes.y;
+      // on a phone the two bottom notes don't fit side by side, and the top
+      // one would run under the zoom buttons, so stack them
+      const narrow = W < 560;
       const a = s("text", { class: "axis-end", x: 12, y: H - 10 }, overlay);
       a.textContent = `← ${xl}`;
-      const b = s("text", { class: "axis-end", x: W - 12, y: H - 10, "text-anchor": "end" }, overlay);
+      const b = s("text", { class: "axis-end", x: W - 12, y: narrow ? H - 28 : H - 10, "text-anchor": "end" }, overlay);
       b.textContent = `${xr} →`;
-      const c = s("text", { class: "axis-end", x: 12, y: 24 }, overlay);
+      const c = s("text", { class: "axis-end", x: 12, y: narrow ? 60 : 24 }, overlay);
       c.textContent = `↑ ${yt}`;
-      const d = s("text", { class: "axis-end", x: 12, y: H - 34 }, overlay);
+      const d = s("text", { class: "axis-end", x: 12, y: narrow ? H - 46 : H - 34 }, overlay);
       d.textContent = `↓ ${yb}`;
     }
   }

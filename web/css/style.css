@@ -1151,6 +1151,9 @@ select {
   .target .who {
     font-size: 25px;
   }
+  .map .axis-end {
+    font-size: 14.5px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
