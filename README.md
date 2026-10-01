@@ -1,14 +1,21 @@
 # player-similarity-scout
 
-Who plays like who? This takes every outfield player with 300+ minutes in the Premier League and La Liga, turns their season into fourteen per 90 numbers, and finds each player's closest statistical twins. It also sorts everyone into eight playing styles with K-Means and draws the whole lot on a map.
+Who plays like who? **Style Twins** finds Premier League and La Liga players with the same playing style as the one you look up, and puts everyone on one map of playing styles.
 
-I called the site Style Twins. Search a player, get their five closest matches with a percentage, and overlay any of them on a radar. There's a second tab with the map of styles and a card for each archetype.
+![Lamine Yamal's closest twins](docs/screenshot-twins.png)
 
-![Lamine Yamal and his closest twins](docs/screenshot-twins.png)
+## Using it
+
+1. Type a player into the search box, or tap one of the names under it.
+2. The card tells you who they play most like, and the list shows their five closest matches.
+3. Click a match to lay the two players over each other on the radar. The further out, the better they are at that thing.
+4. **Map of styles** shows every player at once, coloured by playing style. Click a dot to look that player up.
+
+The maths is folded away under **For the stats nerds** at the bottom of the map tab. The rest of this README is the technical side.
 
 ## Some twins it found
 
-All from 2025/26, same position group, both leagues:
+Under the hood it takes every outfield player with 300+ minutes, turns their season into fourteen per 90 numbers, and finds each player's closest statistical twins. It also sorts everyone into eight playing styles with K-Means and draws the whole lot on a map. All of these are from 2025/26, same position group, both leagues:
 
 | Player | Closest matches |
 |---|---|
@@ -24,7 +31,7 @@ Yamal's twin being Pépé says a lot about what cosine similarity measures. It c
 
 **Data.** Season totals from Sofascore for both leagues, 2025/26 in full plus 2026/27 so far. Every counting stat is divided by minutes and scaled to 90, so a rotation player and an ever-present can be compared, and anyone under 300 minutes is dropped. The fourteen numbers: goals, xG, shots, assists, xA, key passes, big chances created, successful dribbles, final third passes, tackles won, interceptions, ball recoveries, clearances, aerial duels won.
 
-Two of those are stand-ins. Progressive carries and shot creating actions aren't in any free source any more (FBref lost its Opta data in January 2026), so final third passes and big chances created take their places. The site says so wherever they show up.
+Two of those are stand-ins. Progressive carries and shot creating actions aren't in any free source any more (FBref lost its Opta data in January 2026), so final third passes and big chances created take their places. The site says so in its nerd section. On the main screens the stats have plain names (expected goals rather than xG, headers won rather than aerials) with a one line explanation when you hover them.
 
 **Positions.** Sofascore's position groups are too rough: they put Yamal and Palmer in midfield and Saka up front. Positions come from the [transfermarkt-datasets](https://github.com/dcaribou/transfermarkt-datasets) snapshot instead (Right Winger, Attacking Midfield, Centre-Back...), matched by name, and grouped into attackers, midfielders and defenders. 805 of 815 matched. The rest keep Sofascore's group.
 
