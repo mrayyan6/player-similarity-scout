@@ -1,5 +1,6 @@
 import { findSimilar } from "./similarity.js";
 import { createRadar, createMap, tip, untip } from "./charts.js";
+import { clubMark } from "./clubs.js";
 
 const $ = (sel) => document.querySelector(sel);
 const el = (tag, cls, text) => {
@@ -147,7 +148,9 @@ function renderTarget() {
   const dot = el("i");
   dot.style.background = `var(--c${p.c})`;
   badge.append(dot, arche.name);
-  card.append(who, el("p", "meta", `${p.team} · ${p.league} · ${p.pos ?? p.role} · ${p.min.toLocaleString("en-GB")} min in ${p.apps} games`));
+  const info = el("p", "meta");
+  info.append(clubMark(p.team), `${p.team} · ${p.league} · ${p.pos ?? p.role} · ${p.min.toLocaleString("en-GB")} min in ${p.apps} games`);
+  card.append(who, info);
 
   // the answer first: who they play most like
   const best = matches()[0];
@@ -175,7 +178,9 @@ function renderMatches() {
     b.type = "button";
     b.setAttribute("aria-pressed", String(i === state.match));
     const mid = el("span");
-    mid.append(el("span", "name", m.player.name), el("span", "sub", `${m.player.team}, ${m.player.pos ?? m.player.role}`));
+    const sub = el("span", "sub");
+    sub.append(clubMark(m.player.team), `${m.player.team}, ${m.player.pos ?? m.player.role}`);
+    mid.append(el("span", "name", m.player.name), sub);
     const score = el("span", "score");
     const pct = Math.max(0, Math.round(m.sim * 100));
     const meter = el("span", "meter");
@@ -410,7 +415,9 @@ function wireSearch() {
       li.id = `hit-${i}`;
       li.setAttribute("role", "option");
       li.setAttribute("aria-selected", String(i === active));
-      li.append(el("span", null, p.name), el("span", "sub", `${p.team} · ${p.pos ?? p.role}`));
+      const sub = el("span", "sub");
+      sub.append(clubMark(p.team), `${p.team} · ${p.pos ?? p.role}`);
+      li.append(el("span", null, p.name), sub);
       li.addEventListener("pointerdown", (e) => {
         e.preventDefault();
         pick(p);
