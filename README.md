@@ -2,6 +2,8 @@
 
 Who plays like who? **Style Twins** finds Premier League and La Liga players with the same playing style as the one you look up, and puts everyone on one map of playing styles.
 
+**Try it: [player-similarity-scout.vercel.app](https://player-similarity-scout.vercel.app)**
+
 ![Lamine Yamal's closest twins](docs/screenshot-twins.png)
 
 ## Using it
